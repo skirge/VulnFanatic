@@ -43,6 +43,7 @@
         {"function_name":"_mbscpy_s", "trace_params":[2, 1, 0]},
         {"function_name":"_mbscpy_s_l", "trace_params":[2, 1, 0]},
         {"function_name":"_memcpy", "trace_params":[1, 2, 0]},
+        {"function_name":"__builtin_memcpy", "trace_params":[1, 2, 0]},
         {"function_name":"_memcpy_s", "trace_params":[2, 3, 1, 0]},
         {"function_name":"_memmove", "trace_params":[1, 2, 0]},
         {"function_name":"_memmove_s", "trace_params":[2, 3, 1, 0]},
@@ -57,9 +58,11 @@
         {"function_name":"_strcat", "trace_params":[1, 0]},
         {"function_name":"_strcat_s", "trace_params":[2, 1]},
         {"function_name":"_strcpy", "trace_params":[1, 0]},
+        {"function_name":"__builtin_strcpy", "trace_params":[1, 0]},
         {"function_name":"_strcpy_s", "trace_params":[2, 1, 0]},
         {"function_name":"_strncat", "trace_params":[1, 2, 0]},
         {"function_name":"_strncpy", "trace_params":[1, 2, 0]},
+        {"function_name":"__builtin_strncpy", "trace_params":[1, 2, 0]},
         {"function_name":"_swprintf", "trace_params":[2]},
         {"function_name":"_system", "trace_params":[0]},
         {"function_name":"_vcprintf", "trace_params":[0]},
@@ -162,6 +165,7 @@
         {"function_name":"mbscpy_s", "trace_params":[2, 1, 0]},
         {"function_name":"mbscpy_s_l", "trace_params":[2, 1, 0]},
         {"function_name":"memcpy", "trace_params":[1, 2, 0]},
+        {"function_name":"__builtin_memcpy", "trace_params":[1, 2, 0]},
         {"function_name":"memcpy_s", "trace_params":[2, 3, 1, 0]},
         {"function_name":"memmove", "trace_params":[1, 2, 0]},
         {"function_name":"memmove_s", "trace_params":[2, 3, 1, 0]},
@@ -953,6 +957,7 @@
             "functions":[
                 "strcpy",
                 "_strcpy",
+                "__builtin_strcpy",
                 "wcscpy",
                 "_wcscpy",
                 "_mbscpy",
@@ -1116,6 +1121,7 @@
             "details": "Potentially dangerous call to 'strncpy' function. Source and/or count controlled by untrusted input.",
             "functions":[
                 "strncpy",
+                "__builtin_strncpy",
                 "_strncpy",
                 "lstrcpynA",
                 "lstrcpynW"
@@ -1318,6 +1324,7 @@
             "details": "Potentially dangerous call to 'memcpy' function. Source and/or count controlled by untrusted input.",
             "functions":[
                 "memcpy",
+                "__builtin_memcpy",
                 "_memcpy",
                 "wmemcpy",
                 "_wmemcpy"
@@ -2506,6 +2513,7 @@
                 "_memcpy",
                 "strcpy",
                 "_strcpy",
+                "__builtin_strcpy",
                 "strncpy",
                 "_strncpy",
                 "memmove",
