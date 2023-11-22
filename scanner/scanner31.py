@@ -2,7 +2,8 @@ from binaryninja import *
 import re
 import json
 from .free_scanner3 import FreeScanner3
-#import time
+import time
+import traceback
 
 
 class Scanner31(BackgroundTaskThread):
@@ -11,13 +12,13 @@ class Scanner31(BackgroundTaskThread):
         BackgroundTaskThread.__init__(self, self.progress_banner, True)
         self.current_view = bv
         self.xrefs_cache = dict()
-        #self.marked = 0
-        #self.high, self.medium, self.low, self.info = 0,0,0,0
+        self.marked = 0
+        self.high, self.medium, self.low, self.info = 0,0,0,0
         with open(os.path.dirname(os.path.realpath(__file__)) + "/rules3.json",'r') as rules_file:
             self.rules = json.load(rules_file)
 
     def run(self):
-        #start = time.time()
+        start = time.time()
         total_xrefs = 0
 
         for function in self.rules["functions"]:
@@ -31,7 +32,7 @@ class Scanner31(BackgroundTaskThread):
                 self.evaluate_results(self.trace(xref,function["trace_params"]),function["function_name"],xref)
                 xref_counter += 1
                 self.progress = f"{self.progress_banner} checking XREFs of function {function['function_name']} ({round((xref_counter/xrefs_count)*100)}%)"
-        #log_info(f"[*] Vuln scan done in {time.time() - start} and marked {self.marked} out of {total_xrefs} checked.\nHigh: {self.high}\nMedium: {self.medium}\nLow: {self.low}\nInfo: {self.info}")
+        log_info(f"[*] Vuln scan done in {time.time() - start} and marked {self.marked} out of {total_xrefs} checked.\nHigh: {self.high}\nMedium: {self.medium}\nLow: {self.low}\nInfo: {self.info}")
         free = FreeScanner3(self.current_view)
         free.start()
 
@@ -90,7 +91,7 @@ class Scanner31(BackgroundTaskThread):
                                             matches = False
                                             break
                         if matches:
-                            '''if conf == "High":
+                            if conf == "High":
                                 self.high += 1
                             elif conf == "Medium":
                                 self.medium += 1
@@ -98,9 +99,10 @@ class Scanner31(BackgroundTaskThread):
                                 self.low += 1
                             else:
                                 self.info += 1
-                            self.marked += 1'''
-                            tag = xref.function.source_function.create_tag(self.current_view.tag_types["[VulnFanatic] "+conf], f'{test["name"]}: {test["details"]}\n', True)
-                            xref.function.source_function.add_user_address_tag(xref.address, tag)
+                            self.marked += 1
+                            print(f'{xref.address:#x} unsafe {test["name"]}:{test["details"]}')
+                            self.current_view.set_comment_at(xref.address,f' unsafe {test["name"]}:{test["details"]}')
+                            xref.function.source_function.add_tag(self.current_view.tag_types["[VulnFanatic] "+conf], f'{test["name"]}: {test["details"]}\n', xref.address)
                             break
                     if matches:
                         break
@@ -176,14 +178,17 @@ class Scanner31(BackgroundTaskThread):
                     params.append(t_p)
                 continue
             if p < len(xref.params):
-                if (xref.params[p].operation == HighLevelILOperation.HLIL_CONST or xref.params[p].operation == HighLevelILOperation.HLIL_CONST_PTR):
-                    if "bss" in str(self.current_view.get_sections_at(xref.params[p].constant)):
+                if (xref.params[p].operation == HighLevelILOperation.HLIL_CONST or xref.params[p].operation == HighLevelILOperation.HLIL_CONST_PTR) or xref.params[p].operation == HighLevelILOperation.HLIL_CONST_DATA:
+                    if "bss" in str(self.current_view.get_sections_at(xref.params[p].value.value)):
                         trace_struct[str(p)]["global_var"] = True
                     else:
                         try:
-                            value = self.current_view.get_string_at(xref.params[p].constant).value
+                            value = self.current_view.get_string_at(xref.params[p].value.value).value
                         except:
-                            value = hex(xref.params[p].constant)
+                            print(hex(xref.address))
+                            traceback.print_exc()
+                            value = hex(xref.params[p].value.value)
+
                         # handle constant here
                         trace_struct[str(p)]["is_constant"] = True
                         trace_struct[str(p)]["constant_value"].append(value)
@@ -389,6 +394,9 @@ class Scanner31(BackgroundTaskThread):
             for param_var in vars["orig_vars"]:
                 # For each of the original variables find its possible alternatives
                 for var in vars["orig_vars"][param_var]:
+                    if type(var)==binaryninja.variable.ConstantData:
+                        print("Constant")
+                        continue
                     definitions = param.function.get_var_definitions(var)
                     # Also uses are relevant
                     definitions.extend(param.function.get_var_uses(var))
@@ -449,6 +457,9 @@ class Scanner31(BackgroundTaskThread):
                         continue
                     else:
                         checked_functions.append(ref.function.name)
+                    if ref.function.hlil is None:
+                        print("[-] Probably not decompiled function at {}".format(hex(ref.function.start)))
+                        continue
                     for instruction in ref.function.hlil.instructions:
                         # For each instruction check if any of the functions we are looking for is called
                         if function_name in str(instruction):
