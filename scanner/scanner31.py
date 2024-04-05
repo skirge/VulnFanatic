@@ -449,7 +449,7 @@ class Scanner31(BackgroundTaskThread):
                     pass
             if fun_name[:2] == "_Z":
                 # Handle C++ mangled names
-                function_name = re.sub(r'\(.*\)', '', self.current_view.symbols[fun_name].full_name)
+                function_name = re.sub(r'\(.*\)', '', self.current_view.symbols[fun_name][0].full_name)
             for symbol in symbol_item:
                 for ref in self.current_view.get_code_refs(symbol.address):
                     # Get exact instruction index
