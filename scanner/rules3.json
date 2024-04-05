@@ -383,7 +383,7 @@
                 "High":[
                     {
                         "0":{
-                            "affected_by":{"gets":{},"scanf":{"0":"%s","-1":"DYNAMIC_VALUE"},"fscanf":{"1":"%s","-2":"DYNAMIC_VALUE"},"fgets":{"0":"TRACKED"},"recv":{"1":"TRACKED"},"SSL_read":{"1":"TRACKED"},"recvfrom":{"1":"TRACKED"}, "recvmsg":{"1":"TRACKED"},"getc":{},"fread":{"0":"TRACKED"},"read":{"1":"TRACKED"},"sprintf":{"0":"TRACKED","1":"%s","-2":"DYNAMIC_VALUE"},"getenv":{"return":"TRACKED"}},
+                            "affected_by":{"streamBuffGet":{"1":"TRACKED"},"gets":{},"scanf":{"0":"%s","-1":"DYNAMIC_VALUE"},"fscanf":{"1":"%s","-2":"DYNAMIC_VALUE"},"fgets":{"0":"TRACKED"},"recv":{"1":"TRACKED"},"SSL_read":{"1":"TRACKED"},"recvfrom":{"1":"TRACKED"}, "recvmsg":{"1":"TRACKED"},"getc":{},"fread":{"0":"TRACKED"},"read":{"1":"TRACKED"},"sprintf":{"0":"TRACKED","1":"%s","-2":"DYNAMIC_VALUE"},"getenv":{"return":"TRACKED"}},
                             "if_dependant": false
                             
                         }
@@ -392,7 +392,7 @@
                 "Medium":[
                     {
                         "0":{
-                            "affected_by":{"gets":{},"scanf":{"0":"%s","-1":"DYNAMIC_VALUE"},"fscanf":{"1":"%s","-2":"DYNAMIC_VALUE"},"fgets":{"0":"TRACKED"},"recv":{"1":"TRACKED"},"SSL_read":{"1":"TRACKED"},"recvfrom":{"1":"TRACKED"}, "recvmsg":{"1":"TRACKED"},"getc":{},"fread":{"0":"TRACKED"},"read":{"1":"TRACKED"},"sprintf":{"0":"TRACKED","1":"%s","-2":"DYNAMIC_VALUE"},"memcpy":{"0":"TRACKED"},"strcpy":{"0":"TRACKED"},"strncpy":{"0":"TRACKED"},"getenv":{"return":"TRACKED"}},
+                            "affected_by":{"streamBuffGet":{"1":"TRACKED"},"gets":{},"scanf":{"0":"%s","-1":"DYNAMIC_VALUE"},"fscanf":{"1":"%s","-2":"DYNAMIC_VALUE"},"fgets":{"0":"TRACKED"},"recv":{"1":"TRACKED"},"SSL_read":{"1":"TRACKED"},"recvfrom":{"1":"TRACKED"}, "recvmsg":{"1":"TRACKED"},"getc":{},"fread":{"0":"TRACKED"},"read":{"1":"TRACKED"},"sprintf":{"0":"TRACKED","1":"%s","-2":"DYNAMIC_VALUE"},"memcpy":{"0":"TRACKED"},"strcpy":{"0":"TRACKED"},"strncpy":{"0":"TRACKED"},"getenv":{"return":"TRACKED"}},
                             "if_dependant": true
                         }
                     },
@@ -443,7 +443,7 @@
                             "constant_value": ["alertWithMessageText:"]
                         },
                         "6":{
-                            "affected_by":{"gets":{},"scanf":{"0":"%s","-1":"DYNAMIC_VALUE"},"fscanf":{"1":"%s","-2":"DYNAMIC_VALUE"},"fgets":{"0":"TRACKED"},"recv":{"1":"TRACKED"},"SSL_read":{"1":"TRACKED"},"recvfrom":{"1":"TRACKED"}, "recvmsg":{"1":"TRACKED"},"getc":{},"fread":{"0":"TRACKED"},"read":{"1":"TRACKED"},"sprintf":{"0":"TRACKED","1":"%s","-2":"DYNAMIC_VALUE"},"getenv":{"return":"TRACKED"}},
+                            "affected_by":{"streamBuffGet":{"1":"TRACKED"},"gets":{},"scanf":{"0":"%s","-1":"DYNAMIC_VALUE"},"fscanf":{"1":"%s","-2":"DYNAMIC_VALUE"},"fgets":{"0":"TRACKED"},"recv":{"1":"TRACKED"},"SSL_read":{"1":"TRACKED"},"recvfrom":{"1":"TRACKED"}, "recvmsg":{"1":"TRACKED"},"getc":{},"fread":{"0":"TRACKED"},"read":{"1":"TRACKED"},"sprintf":{"0":"TRACKED","1":"%s","-2":"DYNAMIC_VALUE"},"getenv":{"return":"TRACKED"}},
                             "if_dependant": false
                         }
                     },
@@ -453,7 +453,7 @@
                             "constant_value": ["appendFormat:","stringByAppendingFormat:","stringWithFormat:"]
                         },
                         "2":{
-                            "affected_by":{"gets":{},"scanf":{"0":"%s","-1":"DYNAMIC_VALUE"},"fscanf":{"1":"%s","-2":"DYNAMIC_VALUE"},"fgets":{"0":"TRACKED"},"recv":{"1":"TRACKED"},"SSL_read":{"1":"TRACKED"},"recvfrom":{"1":"TRACKED"}, "recvmsg":{"1":"TRACKED"},"getc":{},"fread":{"0":"TRACKED"},"read":{"1":"TRACKED"},"sprintf":{"0":"TRACKED","1":"%s","-2":"DYNAMIC_VALUE"},"getenv":{"return":"TRACKED"}},
+                            "affected_by":{"streamBuffGet":{"1":"TRACKED"},"gets":{},"scanf":{"0":"%s","-1":"DYNAMIC_VALUE"},"fscanf":{"1":"%s","-2":"DYNAMIC_VALUE"},"fgets":{"0":"TRACKED"},"recv":{"1":"TRACKED"},"SSL_read":{"1":"TRACKED"},"recvfrom":{"1":"TRACKED"}, "recvmsg":{"1":"TRACKED"},"getc":{},"fread":{"0":"TRACKED"},"read":{"1":"TRACKED"},"sprintf":{"0":"TRACKED","1":"%s","-2":"DYNAMIC_VALUE"},"getenv":{"return":"TRACKED"}},
                             "if_dependant": false
                         }
                     },
@@ -463,7 +463,7 @@
                             "constant_value": ["raise:format:"]
                         },
                         "3":{
-                            "affected_by":{"gets":{},"scanf":{"0":"%s","-1":"DYNAMIC_VALUE"},"fscanf":{"1":"%s","-2":"DYNAMIC_VALUE"},"fgets":{"0":"TRACKED"},"recv":{"1":"TRACKED"},"SSL_read":{"1":"TRACKED"},"recvfrom":{"1":"TRACKED"}, "recvmsg":{"1":"TRACKED"},"getc":{},"fread":{"0":"TRACKED"},"read":{"1":"TRACKED"},"sprintf":{"0":"TRACKED","1":"%s","-2":"DYNAMIC_VALUE"},"getenv":{"return":"TRACKED"}},
+                            "affected_by":{"streamBuffGet":{"1":"TRACKED"},"gets":{},"scanf":{"0":"%s","-1":"DYNAMIC_VALUE"},"fscanf":{"1":"%s","-2":"DYNAMIC_VALUE"},"fgets":{"0":"TRACKED"},"recv":{"1":"TRACKED"},"SSL_read":{"1":"TRACKED"},"recvfrom":{"1":"TRACKED"}, "recvmsg":{"1":"TRACKED"},"getc":{},"fread":{"0":"TRACKED"},"read":{"1":"TRACKED"},"sprintf":{"0":"TRACKED","1":"%s","-2":"DYNAMIC_VALUE"},"getenv":{"return":"TRACKED"}},
                             "if_dependant": false
                         }
                     }
@@ -475,7 +475,7 @@
                             "constant_value": ["alertWithMessageText"]
                         },
                         "6":{
-                            "affected_by":{"gets":{},"scanf":{"0":"%s","-1":"DYNAMIC_VALUE"},"fscanf":{"1":"%s","-2":"DYNAMIC_VALUE"},"fgets":{"0":"TRACKED"},"recv":{"1":"TRACKED"},"SSL_read":{"1":"TRACKED"},"recvfrom":{"1":"TRACKED"}, "recvmsg":{"1":"TRACKED"},"getc":{},"fread":{"0":"TRACKED"},"read":{"1":"TRACKED"},"sprintf":{"0":"TRACKED","1":"%s","-2":"DYNAMIC_VALUE"},"memcpy":{"0":"TRACKED"},"strcpy":{"0":"TRACKED"},"strncpy":{"0":"TRACKED"},"getenv":{"return":"TRACKED"}},
+                            "affected_by":{"streamBuffGet":{"1":"TRACKED"},"gets":{},"scanf":{"0":"%s","-1":"DYNAMIC_VALUE"},"fscanf":{"1":"%s","-2":"DYNAMIC_VALUE"},"fgets":{"0":"TRACKED"},"recv":{"1":"TRACKED"},"SSL_read":{"1":"TRACKED"},"recvfrom":{"1":"TRACKED"}, "recvmsg":{"1":"TRACKED"},"getc":{},"fread":{"0":"TRACKED"},"read":{"1":"TRACKED"},"sprintf":{"0":"TRACKED","1":"%s","-2":"DYNAMIC_VALUE"},"memcpy":{"0":"TRACKED"},"strcpy":{"0":"TRACKED"},"strncpy":{"0":"TRACKED"},"getenv":{"return":"TRACKED"}},
                             "if_dependant": true
                         }
                     },
@@ -495,7 +495,7 @@
                             "constant_value": ["appendFormat:","stringByAppendingFormat:","stringWithFormat:"]
                         },
                         "2":{
-                            "affected_by":{"gets":{},"scanf":{"0":"%s","-1":"DYNAMIC_VALUE"},"fscanf":{"1":"%s","-2":"DYNAMIC_VALUE"},"fgets":{"0":"TRACKED"},"recv":{"1":"TRACKED"},"SSL_read":{"1":"TRACKED"},"recvfrom":{"1":"TRACKED"}, "recvmsg":{"1":"TRACKED"},"getc":{},"fread":{"0":"TRACKED"},"read":{"1":"TRACKED"},"sprintf":{"0":"TRACKED","1":"%s","-2":"DYNAMIC_VALUE"},"memcpy":{"0":"TRACKED"},"strcpy":{"0":"TRACKED"},"strncpy":{"0":"TRACKED"},"getenv":{"return":"TRACKED"}},
+                            "affected_by":{"streamBuffGet":{"1":"TRACKED"},"gets":{},"scanf":{"0":"%s","-1":"DYNAMIC_VALUE"},"fscanf":{"1":"%s","-2":"DYNAMIC_VALUE"},"fgets":{"0":"TRACKED"},"recv":{"1":"TRACKED"},"SSL_read":{"1":"TRACKED"},"recvfrom":{"1":"TRACKED"}, "recvmsg":{"1":"TRACKED"},"getc":{},"fread":{"0":"TRACKED"},"read":{"1":"TRACKED"},"sprintf":{"0":"TRACKED","1":"%s","-2":"DYNAMIC_VALUE"},"memcpy":{"0":"TRACKED"},"strcpy":{"0":"TRACKED"},"strncpy":{"0":"TRACKED"},"getenv":{"return":"TRACKED"}},
                             "if_dependant": true
                         }
                     },
@@ -515,7 +515,7 @@
                             "constant_value": ["raise:format:"]
                         },
                         "3":{
-                            "affected_by":{"gets":{},"scanf":{"0":"%s","-1":"DYNAMIC_VALUE"},"fscanf":{"1":"%s","-2":"DYNAMIC_VALUE"},"fgets":{"0":"TRACKED"},"recv":{"1":"TRACKED"},"SSL_read":{"1":"TRACKED"},"recvfrom":{"1":"TRACKED"}, "recvmsg":{"1":"TRACKED"},"getc":{},"fread":{"0":"TRACKED"},"read":{"1":"TRACKED"},"sprintf":{"0":"TRACKED","1":"%s","-2":"DYNAMIC_VALUE"},"memcpy":{"0":"TRACKED"},"strcpy":{"0":"TRACKED"},"strncpy":{"0":"TRACKED"},"getenv":{"return":"TRACKED"}},
+                            "affected_by":{"streamBuffGet":{"1":"TRACKED"},"gets":{},"scanf":{"0":"%s","-1":"DYNAMIC_VALUE"},"fscanf":{"1":"%s","-2":"DYNAMIC_VALUE"},"fgets":{"0":"TRACKED"},"recv":{"1":"TRACKED"},"SSL_read":{"1":"TRACKED"},"recvfrom":{"1":"TRACKED"}, "recvmsg":{"1":"TRACKED"},"getc":{},"fread":{"0":"TRACKED"},"read":{"1":"TRACKED"},"sprintf":{"0":"TRACKED","1":"%s","-2":"DYNAMIC_VALUE"},"memcpy":{"0":"TRACKED"},"strcpy":{"0":"TRACKED"},"strncpy":{"0":"TRACKED"},"getenv":{"return":"TRACKED"}},
                             "if_dependant": true
                         }
                     },
@@ -683,7 +683,7 @@
                 "High":[
                     {
                         "1":{
-                            "affected_by":{"gets":{},"scanf":{"0":"%s","-1":"DYNAMIC_VALUE"},"fscanf":{"1":"%s","-2":"DYNAMIC_VALUE"},"fgets":{"0":"TRACKED"},"recv":{"1":"TRACKED"},"SSL_read":{"1":"TRACKED"},"recvfrom":{"1":"TRACKED"}, "recvmsg":{"1":"TRACKED"},"getc":{},"fread":{"0":"TRACKED"},"read":{"1":"TRACKED"},"sprintf":{"0":"TRACKED","1":"%s","-2":"DYNAMIC_VALUE"},"getenv":{"return":"TRACKED"}},
+                            "affected_by":{"streamBuffGet":{"1":"TRACKED"},"gets":{},"scanf":{"0":"%s","-1":"DYNAMIC_VALUE"},"fscanf":{"1":"%s","-2":"DYNAMIC_VALUE"},"fgets":{"0":"TRACKED"},"recv":{"1":"TRACKED"},"SSL_read":{"1":"TRACKED"},"recvfrom":{"1":"TRACKED"}, "recvmsg":{"1":"TRACKED"},"getc":{},"fread":{"0":"TRACKED"},"read":{"1":"TRACKED"},"sprintf":{"0":"TRACKED","1":"%s","-2":"DYNAMIC_VALUE"},"getenv":{"return":"TRACKED"}},
                             "if_dependant": false
                         }
                     }
@@ -691,7 +691,7 @@
                 "Medium":[
                     {
                         "1":{
-                            "affected_by":{"gets":{},"scanf":{"0":"%s","-1":"DYNAMIC_VALUE"},"fscanf":{"1":"%s","-2":"DYNAMIC_VALUE"},"fgets":{"0":"TRACKED"},"recv":{"1":"TRACKED"},"SSL_read":{"1":"TRACKED"},"recvfrom":{"1":"TRACKED"}, "recvmsg":{"1":"TRACKED"},"getc":{},"fread":{"0":"TRACKED"},"read":{"1":"TRACKED"},"sprintf":{"0":"TRACKED","1":"%s","-2":"DYNAMIC_VALUE"},"memcpy":{"0":"TRACKED"},"strcpy":{"0":"TRACKED"},"strncpy":{"0":"TRACKED"},"getenv":{"return":"TRACKED"}},
+                            "affected_by":{"streamBuffGet":{"1":"TRACKED"},"gets":{},"scanf":{"0":"%s","-1":"DYNAMIC_VALUE"},"fscanf":{"1":"%s","-2":"DYNAMIC_VALUE"},"fgets":{"0":"TRACKED"},"recv":{"1":"TRACKED"},"SSL_read":{"1":"TRACKED"},"recvfrom":{"1":"TRACKED"}, "recvmsg":{"1":"TRACKED"},"getc":{},"fread":{"0":"TRACKED"},"read":{"1":"TRACKED"},"sprintf":{"0":"TRACKED","1":"%s","-2":"DYNAMIC_VALUE"},"memcpy":{"0":"TRACKED"},"strcpy":{"0":"TRACKED"},"strncpy":{"0":"TRACKED"},"getenv":{"return":"TRACKED"}},
                             "if_dependant": true
                         }
                     },
@@ -790,7 +790,7 @@
                 "High":[
                     {
                         "2":{
-                            "affected_by":{"gets":{},"scanf":{"0":"%s","-1":"DYNAMIC_VALUE"},"fscanf":{"1":"%s","-2":"DYNAMIC_VALUE"},"fgets":{"0":"TRACKED"},"recv":{"1":"TRACKED"},"SSL_read":{"1":"TRACKED"},"recvfrom":{"1":"TRACKED"}, "recvmsg":{"1":"TRACKED"},"getc":{},"fread":{"0":"TRACKED"},"read":{"1":"TRACKED"},"sprintf":{"0":"TRACKED","1":"%s","-2":"DYNAMIC_VALUE"},"getenv":{"return":"TRACKED"}},
+                            "affected_by":{"streamBuffGet":{"1":"TRACKED"},"gets":{},"scanf":{"0":"%s","-1":"DYNAMIC_VALUE"},"fscanf":{"1":"%s","-2":"DYNAMIC_VALUE"},"fgets":{"0":"TRACKED"},"recv":{"1":"TRACKED"},"SSL_read":{"1":"TRACKED"},"recvfrom":{"1":"TRACKED"}, "recvmsg":{"1":"TRACKED"},"getc":{},"fread":{"0":"TRACKED"},"read":{"1":"TRACKED"},"sprintf":{"0":"TRACKED","1":"%s","-2":"DYNAMIC_VALUE"},"getenv":{"return":"TRACKED"}},
                             "if_dependant": false
                         }
                     }
@@ -798,7 +798,7 @@
                 "Medium":[
                     {
                         "2":{
-                            "affected_by":{"gets":{},"scanf":{"0":"%s","-1":"DYNAMIC_VALUE"},"fscanf":{"1":"%s","-2":"DYNAMIC_VALUE"},"fgets":{"0":"TRACKED"},"recv":{"1":"TRACKED"},"SSL_read":{"1":"TRACKED"},"recvfrom":{"1":"TRACKED"}, "recvmsg":{"1":"TRACKED"},"getc":{},"fread":{"0":"TRACKED"},"read":{"1":"TRACKED"},"sprintf":{"0":"TRACKED","1":"%s","-2":"DYNAMIC_VALUE"},"memcpy":{"0":"TRACKED"},"strcpy":{"0":"TRACKED"},"strncpy":{"0":"TRACKED"},"getenv":{"return":"TRACKED"}},
+                            "affected_by":{"streamBuffGet":{"1":"TRACKED"},"gets":{},"scanf":{"0":"%s","-1":"DYNAMIC_VALUE"},"fscanf":{"1":"%s","-2":"DYNAMIC_VALUE"},"fgets":{"0":"TRACKED"},"recv":{"1":"TRACKED"},"SSL_read":{"1":"TRACKED"},"recvfrom":{"1":"TRACKED"}, "recvmsg":{"1":"TRACKED"},"getc":{},"fread":{"0":"TRACKED"},"read":{"1":"TRACKED"},"sprintf":{"0":"TRACKED","1":"%s","-2":"DYNAMIC_VALUE"},"memcpy":{"0":"TRACKED"},"strcpy":{"0":"TRACKED"},"strncpy":{"0":"TRACKED"},"getenv":{"return":"TRACKED"}},
                             "if_dependant": true
                         }
                     },
@@ -853,7 +853,7 @@
                 "High":[
                     {
                         "3":{
-                            "affected_by":{"gets":{},"scanf":{"0":"%s","-1":"DYNAMIC_VALUE"},"fscanf":{"1":"%s","-2":"DYNAMIC_VALUE"},"fgets":{"0":"TRACKED"},"recv":{"1":"TRACKED"},"SSL_read":{"1":"TRACKED"},"recvfrom":{"1":"TRACKED"}, "recvmsg":{"1":"TRACKED"},"getc":{},"fread":{"0":"TRACKED"},"read":{"1":"TRACKED"},"sprintf":{"0":"TRACKED","1":"%s","-2":"DYNAMIC_VALUE"},"getenv":{"return":"TRACKED"}},
+                            "affected_by":{"streamBuffGet":{"1":"TRACKED"},"gets":{},"scanf":{"0":"%s","-1":"DYNAMIC_VALUE"},"fscanf":{"1":"%s","-2":"DYNAMIC_VALUE"},"fgets":{"0":"TRACKED"},"recv":{"1":"TRACKED"},"SSL_read":{"1":"TRACKED"},"recvfrom":{"1":"TRACKED"}, "recvmsg":{"1":"TRACKED"},"getc":{},"fread":{"0":"TRACKED"},"read":{"1":"TRACKED"},"sprintf":{"0":"TRACKED","1":"%s","-2":"DYNAMIC_VALUE"},"getenv":{"return":"TRACKED"}},
                             "if_dependant": false
                         }
                     }
@@ -861,7 +861,7 @@
                 "Medium":[
                     {
                         "3":{
-                            "affected_by":{"gets":{},"scanf":{"0":"%s","-1":"DYNAMIC_VALUE"},"fscanf":{"1":"%s","-2":"DYNAMIC_VALUE"},"fgets":{"0":"TRACKED"},"recv":{"1":"TRACKED"},"SSL_read":{"1":"TRACKED"},"recvfrom":{"1":"TRACKED"}, "recvmsg":{"1":"TRACKED"},"getc":{},"fread":{"0":"TRACKED"},"read":{"1":"TRACKED"},"sprintf":{"0":"TRACKED","1":"%s","-2":"DYNAMIC_VALUE"},"memcpy":{"0":"TRACKED"},"strcpy":{"0":"TRACKED"},"strncpy":{"0":"TRACKED"},"getenv":{"return":"TRACKED"}},
+                            "affected_by":{"streamBuffGet":{"1":"TRACKED"},"gets":{},"scanf":{"0":"%s","-1":"DYNAMIC_VALUE"},"fscanf":{"1":"%s","-2":"DYNAMIC_VALUE"},"fgets":{"0":"TRACKED"},"recv":{"1":"TRACKED"},"SSL_read":{"1":"TRACKED"},"recvfrom":{"1":"TRACKED"}, "recvmsg":{"1":"TRACKED"},"getc":{},"fread":{"0":"TRACKED"},"read":{"1":"TRACKED"},"sprintf":{"0":"TRACKED","1":"%s","-2":"DYNAMIC_VALUE"},"memcpy":{"0":"TRACKED"},"strcpy":{"0":"TRACKED"},"strncpy":{"0":"TRACKED"},"getenv":{"return":"TRACKED"}},
                             "if_dependant": true
                         }
                     },
@@ -910,7 +910,7 @@
                 "High":[
                     {
                         "4":{
-                            "affected_by":{"gets":{},"scanf":{"0":"%s","-1":"DYNAMIC_VALUE"},"fscanf":{"1":"%s","-2":"DYNAMIC_VALUE"},"fgets":{"0":"TRACKED"},"recv":{"1":"TRACKED"},"SSL_read":{"1":"TRACKED"},"recvfrom":{"1":"TRACKED"}, "recvmsg":{"1":"TRACKED"},"getc":{},"fread":{"0":"TRACKED"},"read":{"1":"TRACKED"},"sprintf":{"0":"TRACKED","1":"%s","-2":"DYNAMIC_VALUE"},"getenv":{"return":"TRACKED"}},
+                            "affected_by":{"streamBuffGet":{"1":"TRACKED"},"gets":{},"scanf":{"0":"%s","-1":"DYNAMIC_VALUE"},"fscanf":{"1":"%s","-2":"DYNAMIC_VALUE"},"fgets":{"0":"TRACKED"},"recv":{"1":"TRACKED"},"SSL_read":{"1":"TRACKED"},"recvfrom":{"1":"TRACKED"}, "recvmsg":{"1":"TRACKED"},"getc":{},"fread":{"0":"TRACKED"},"read":{"1":"TRACKED"},"sprintf":{"0":"TRACKED","1":"%s","-2":"DYNAMIC_VALUE"},"getenv":{"return":"TRACKED"}},
                             "if_dependant": false
                         }
                     }
@@ -918,7 +918,7 @@
                 "Medium":[
                     {
                         "4":{
-                            "affected_by":{"gets":{},"scanf":{"0":"%s","-1":"DYNAMIC_VALUE"},"fscanf":{"1":"%s","-2":"DYNAMIC_VALUE"},"fgets":{"0":"TRACKED"},"recv":{"1":"TRACKED"},"SSL_read":{"1":"TRACKED"},"recvfrom":{"1":"TRACKED"}, "recvmsg":{"1":"TRACKED"},"getc":{},"fread":{"0":"TRACKED"},"read":{"1":"TRACKED"},"sprintf":{"0":"TRACKED","1":"%s","-2":"DYNAMIC_VALUE"},"memcpy":{"0":"TRACKED"},"strcpy":{"0":"TRACKED"},"strncpy":{"0":"TRACKED"},"getenv":{"return":"TRACKED"}},
+                            "affected_by":{"streamBuffGet":{"1":"TRACKED"},"gets":{},"scanf":{"0":"%s","-1":"DYNAMIC_VALUE"},"fscanf":{"1":"%s","-2":"DYNAMIC_VALUE"},"fgets":{"0":"TRACKED"},"recv":{"1":"TRACKED"},"SSL_read":{"1":"TRACKED"},"recvfrom":{"1":"TRACKED"}, "recvmsg":{"1":"TRACKED"},"getc":{},"fread":{"0":"TRACKED"},"read":{"1":"TRACKED"},"sprintf":{"0":"TRACKED","1":"%s","-2":"DYNAMIC_VALUE"},"memcpy":{"0":"TRACKED"},"strcpy":{"0":"TRACKED"},"strncpy":{"0":"TRACKED"},"getenv":{"return":"TRACKED"}},
                             "if_dependant": true
                         }
                     },
@@ -969,7 +969,7 @@
                 "High":[
                     {
                         "1":{
-                            "affected_by":{"gets":{},"scanf":{"0":"%s","-1":"DYNAMIC_VALUE"},"fscanf":{"1":"%s","-2":"DYNAMIC_VALUE"},"fgets":{"0":"TRACKED"},"recv":{"1":"TRACKED"},"SSL_read":{"1":"TRACKED"},"recvfrom":{"1":"TRACKED"}, "recvmsg":{"1":"TRACKED"},"getc":{},"fread":{"0":"TRACKED"},"read":{"1":"TRACKED"},"sprintf":{"0":"TRACKED","1":"%s","-2":"DYNAMIC_VALUE"},"getenv":{"return":"TRACKED"}},
+                            "affected_by":{"streamBuffGet":{"1":"TRACKED"},"gets":{},"scanf":{"0":"%s","-1":"DYNAMIC_VALUE"},"fscanf":{"1":"%s","-2":"DYNAMIC_VALUE"},"fgets":{"0":"TRACKED"},"recv":{"1":"TRACKED"},"SSL_read":{"1":"TRACKED"},"recvfrom":{"1":"TRACKED"}, "recvmsg":{"1":"TRACKED"},"getc":{},"fread":{"0":"TRACKED"},"read":{"1":"TRACKED"},"sprintf":{"0":"TRACKED","1":"%s","-2":"DYNAMIC_VALUE"},"getenv":{"return":"TRACKED"}},
                             "if_dependant": false,
                             "not_affected_by": ["strlen","toa","toi"]
                         },
@@ -981,7 +981,7 @@
                 "Medium":[
                     {
                         "1":{
-                            "affected_by":{"gets":{},"scanf":{"0":"%s","-1":"DYNAMIC_VALUE"},"fscanf":{"1":"%s","-2":"DYNAMIC_VALUE"},"fgets":{"0":"TRACKED"},"recv":{"1":"TRACKED"},"SSL_read":{"1":"TRACKED"},"recvfrom":{"1":"TRACKED"}, "recvmsg":{"1":"TRACKED"},"getc":{},"fread":{"0":"TRACKED"},"read":{"1":"TRACKED"},"sprintf":{"0":"TRACKED","1":"%s","-2":"DYNAMIC_VALUE"},"memcpy":{"0":"TRACKED"},"strcpy":{"0":"TRACKED"},"strncpy":{"0":"TRACKED"},"getenv":{"return":"TRACKED"}},
+                            "affected_by":{"streamBuffGet":{"1":"TRACKED"},"gets":{},"scanf":{"0":"%s","-1":"DYNAMIC_VALUE"},"fscanf":{"1":"%s","-2":"DYNAMIC_VALUE"},"fgets":{"0":"TRACKED"},"recv":{"1":"TRACKED"},"SSL_read":{"1":"TRACKED"},"recvfrom":{"1":"TRACKED"}, "recvmsg":{"1":"TRACKED"},"getc":{},"fread":{"0":"TRACKED"},"read":{"1":"TRACKED"},"sprintf":{"0":"TRACKED","1":"%s","-2":"DYNAMIC_VALUE"},"memcpy":{"0":"TRACKED"},"strcpy":{"0":"TRACKED"},"strncpy":{"0":"TRACKED"},"getenv":{"return":"TRACKED"}},
                             "if_dependant": true,
                             "not_affected_by": ["strlen","toa","toi"]
                         },
@@ -1051,7 +1051,7 @@
                 "High":[
                     {
                         "1":{
-                            "affected_by":{"gets":{},"scanf":{"0":"%s","-1":"DYNAMIC_VALUE"},"fscanf":{"1":"%s","-2":"DYNAMIC_VALUE"},"fgets":{"0":"TRACKED"},"recv":{"1":"TRACKED"},"SSL_read":{"1":"TRACKED"},"recvfrom":{"1":"TRACKED"}, "recvmsg":{"1":"TRACKED"},"getc":{},"fread":{"0":"TRACKED"},"read":{"1":"TRACKED"},"sprintf":{"0":"TRACKED","1":"%s","-2":"DYNAMIC_VALUE"},"getenv":{"return":"TRACKED"}},
+                            "affected_by":{"streamBuffGet":{"1":"TRACKED"},"gets":{},"scanf":{"0":"%s","-1":"DYNAMIC_VALUE"},"fscanf":{"1":"%s","-2":"DYNAMIC_VALUE"},"fgets":{"0":"TRACKED"},"recv":{"1":"TRACKED"},"SSL_read":{"1":"TRACKED"},"recvfrom":{"1":"TRACKED"}, "recvmsg":{"1":"TRACKED"},"getc":{},"fread":{"0":"TRACKED"},"read":{"1":"TRACKED"},"sprintf":{"0":"TRACKED","1":"%s","-2":"DYNAMIC_VALUE"},"getenv":{"return":"TRACKED"}},
                             "if_dependant": false,
                             "not_affected_by": ["strlen","toa","toi"]
                         },
@@ -1063,7 +1063,7 @@
                 "Medium":[
                     {
                         "1":{
-                            "affected_by":{"gets":{},"scanf":{"0":"%s","-1":"DYNAMIC_VALUE"},"fscanf":{"1":"%s","-2":"DYNAMIC_VALUE"},"fgets":{"0":"TRACKED"},"recv":{"1":"TRACKED"},"SSL_read":{"1":"TRACKED"},"recvfrom":{"1":"TRACKED"}, "recvmsg":{"1":"TRACKED"},"getc":{},"fread":{"0":"TRACKED"},"read":{"1":"TRACKED"},"sprintf":{"0":"TRACKED","1":"%s","-2":"DYNAMIC_VALUE"},"memcpy":{"0":"TRACKED"},"strcpy":{"0":"TRACKED"},"strncpy":{"0":"TRACKED"},"getenv":{"return":"TRACKED"}},
+                            "affected_by":{"streamBuffGet":{"1":"TRACKED"},"gets":{},"scanf":{"0":"%s","-1":"DYNAMIC_VALUE"},"fscanf":{"1":"%s","-2":"DYNAMIC_VALUE"},"fgets":{"0":"TRACKED"},"recv":{"1":"TRACKED"},"SSL_read":{"1":"TRACKED"},"recvfrom":{"1":"TRACKED"}, "recvmsg":{"1":"TRACKED"},"getc":{},"fread":{"0":"TRACKED"},"read":{"1":"TRACKED"},"sprintf":{"0":"TRACKED","1":"%s","-2":"DYNAMIC_VALUE"},"memcpy":{"0":"TRACKED"},"strcpy":{"0":"TRACKED"},"strncpy":{"0":"TRACKED"},"getenv":{"return":"TRACKED"}},
                             "if_dependant": true,
                             "not_affected_by": ["strlen","toa","toi"]
                         },
@@ -1130,7 +1130,7 @@
                 "High":[
                     {
                         "1":{
-                            "affected_by":{"gets":{},"scanf":{"0":"%s","-1":"DYNAMIC_VALUE"},"fscanf":{"1":"%s","-2":"DYNAMIC_VALUE"},"fgets":{"0":"TRACKED"},"recv":{"1":"TRACKED"},"SSL_read":{"1":"TRACKED"},"recvfrom":{"1":"TRACKED"}, "recvmsg":{"1":"TRACKED"},"getc":{},"fread":{"0":"TRACKED"},"read":{"1":"TRACKED"},"sprintf":{"0":"TRACKED","1":"%s","-2":"DYNAMIC_VALUE"},"getenv":{"return":"TRACKED"}},
+                            "affected_by":{"streamBuffGet":{"1":"TRACKED"},"gets":{},"scanf":{"0":"%s","-1":"DYNAMIC_VALUE"},"fscanf":{"1":"%s","-2":"DYNAMIC_VALUE"},"fgets":{"0":"TRACKED"},"recv":{"1":"TRACKED"},"SSL_read":{"1":"TRACKED"},"recvfrom":{"1":"TRACKED"}, "recvmsg":{"1":"TRACKED"},"getc":{},"fread":{"0":"TRACKED"},"read":{"1":"TRACKED"},"sprintf":{"0":"TRACKED","1":"%s","-2":"DYNAMIC_VALUE"},"getenv":{"return":"TRACKED"}},
                             "if_dependant": false,
                             "not_affected_by": ["strlen","toa","toi"]
                         },
@@ -1146,7 +1146,7 @@
                 "Medium":[
                     {
                         "1":{
-                            "affected_by":{"gets":{},"scanf":{"0":"%s","-1":"DYNAMIC_VALUE"},"fscanf":{"1":"%s","-2":"DYNAMIC_VALUE"},"fgets":{"0":"TRACKED"},"recv":{"1":"TRACKED"},"SSL_read":{"1":"TRACKED"},"recvfrom":{"1":"TRACKED"}, "recvmsg":{"1":"TRACKED"},"getc":{},"fread":{"0":"TRACKED"},"read":{"1":"TRACKED"},"sprintf":{"0":"TRACKED","1":"%s","-2":"DYNAMIC_VALUE"},"memcpy":{"0":"TRACKED"},"strcpy":{"0":"TRACKED"},"strncpy":{"0":"TRACKED"},"getenv":{"return":"TRACKED"}},
+                            "affected_by":{"streamBuffGet":{"1":"TRACKED"},"gets":{},"scanf":{"0":"%s","-1":"DYNAMIC_VALUE"},"fscanf":{"1":"%s","-2":"DYNAMIC_VALUE"},"fgets":{"0":"TRACKED"},"recv":{"1":"TRACKED"},"SSL_read":{"1":"TRACKED"},"recvfrom":{"1":"TRACKED"}, "recvmsg":{"1":"TRACKED"},"getc":{},"fread":{"0":"TRACKED"},"read":{"1":"TRACKED"},"sprintf":{"0":"TRACKED","1":"%s","-2":"DYNAMIC_VALUE"},"memcpy":{"0":"TRACKED"},"strcpy":{"0":"TRACKED"},"strncpy":{"0":"TRACKED"},"getenv":{"return":"TRACKED"}},
                             "if_dependant": true,
                             "not_affected_by": ["strlen","toa","toi"]
                         },
@@ -1230,7 +1230,7 @@
                 "High":[
                     {
                         "1":{
-                            "affected_by":{"gets":{},"scanf":{"0":"%s","-1":"DYNAMIC_VALUE"},"fscanf":{"1":"%s","-2":"DYNAMIC_VALUE"},"fgets":{"0":"TRACKED"},"recv":{"1":"TRACKED"},"SSL_read":{"1":"TRACKED"},"recvfrom":{"1":"TRACKED"}, "recvmsg":{"1":"TRACKED"},"getc":{},"fread":{"0":"TRACKED"},"read":{"1":"TRACKED"},"sprintf":{"0":"TRACKED","1":"%s","-2":"DYNAMIC_VALUE"},"getenv":{"return":"TRACKED"}},
+                            "affected_by":{"streamBuffGet":{"1":"TRACKED"},"gets":{},"scanf":{"0":"%s","-1":"DYNAMIC_VALUE"},"fscanf":{"1":"%s","-2":"DYNAMIC_VALUE"},"fgets":{"0":"TRACKED"},"recv":{"1":"TRACKED"},"SSL_read":{"1":"TRACKED"},"recvfrom":{"1":"TRACKED"}, "recvmsg":{"1":"TRACKED"},"getc":{},"fread":{"0":"TRACKED"},"read":{"1":"TRACKED"},"sprintf":{"0":"TRACKED","1":"%s","-2":"DYNAMIC_VALUE"},"getenv":{"return":"TRACKED"}},
                             "if_dependant": false,
                             "not_affected_by": ["strlen","toa","toi"]
                         },
@@ -1246,7 +1246,7 @@
                 "Medium":[
                     {
                         "1":{
-                            "affected_by":{"gets":{},"scanf":{"0":"%s","-1":"DYNAMIC_VALUE"},"fscanf":{"1":"%s","-2":"DYNAMIC_VALUE"},"fgets":{"0":"TRACKED"},"recv":{"1":"TRACKED"},"SSL_read":{"1":"TRACKED"},"recvfrom":{"1":"TRACKED"}, "recvmsg":{"1":"TRACKED"},"getc":{},"fread":{"0":"TRACKED"},"read":{"1":"TRACKED"},"sprintf":{"0":"TRACKED","1":"%s","-2":"DYNAMIC_VALUE"},"memcpy":{"0":"TRACKED"},"strcpy":{"0":"TRACKED"},"strncpy":{"0":"TRACKED"},"getenv":{"return":"TRACKED"}},
+                            "affected_by":{"streamBuffGet":{"1":"TRACKED"},"gets":{},"scanf":{"0":"%s","-1":"DYNAMIC_VALUE"},"fscanf":{"1":"%s","-2":"DYNAMIC_VALUE"},"fgets":{"0":"TRACKED"},"recv":{"1":"TRACKED"},"SSL_read":{"1":"TRACKED"},"recvfrom":{"1":"TRACKED"}, "recvmsg":{"1":"TRACKED"},"getc":{},"fread":{"0":"TRACKED"},"read":{"1":"TRACKED"},"sprintf":{"0":"TRACKED","1":"%s","-2":"DYNAMIC_VALUE"},"memcpy":{"0":"TRACKED"},"strcpy":{"0":"TRACKED"},"strncpy":{"0":"TRACKED"},"getenv":{"return":"TRACKED"}},
                             "if_dependant": true,
                             "not_affected_by": ["strlen","toa","toi"]
                         },
@@ -1333,7 +1333,7 @@
                 "High":[
                     {
                         "1":{
-                            "affected_by":{"gets":{},"scanf":{"0":"%s","-1":"DYNAMIC_VALUE"},"fscanf":{"1":"%s","-2":"DYNAMIC_VALUE"},"fgets":{"0":"TRACKED"},"recv":{"1":"TRACKED"},"SSL_read":{"1":"TRACKED"},"recvfrom":{"1":"TRACKED"}, "recvmsg":{"1":"TRACKED"},"getc":{},"fread":{"0":"TRACKED"},"read":{"1":"TRACKED"},"sprintf":{"0":"TRACKED","1":"%s","-2":"DYNAMIC_VALUE"},"getenv":{"return":"TRACKED"}},
+                            "affected_by":{"streamBuffGet":{"1":"TRACKED"},"gets":{},"scanf":{"0":"%s","-1":"DYNAMIC_VALUE"},"fscanf":{"1":"%s","-2":"DYNAMIC_VALUE"},"fgets":{"0":"TRACKED"},"recv":{"1":"TRACKED"},"SSL_read":{"1":"TRACKED"},"recvfrom":{"1":"TRACKED"}, "recvmsg":{"1":"TRACKED"},"getc":{},"fread":{"0":"TRACKED"},"read":{"1":"TRACKED"},"sprintf":{"0":"TRACKED","1":"%s","-2":"DYNAMIC_VALUE"},"getenv":{"return":"TRACKED"}},
                             "if_dependant": false,
                             "not_affected_by": ["strlen","toa","toi"]
                         },
@@ -1349,7 +1349,7 @@
                 "Medium":[
                     {
                         "1":{
-                            "affected_by":{"gets":{},"scanf":{"0":"%s","-1":"DYNAMIC_VALUE"},"fscanf":{"1":"%s","-2":"DYNAMIC_VALUE"},"fgets":{"0":"TRACKED"},"recv":{"1":"TRACKED"},"SSL_read":{"1":"TRACKED"},"recvfrom":{"1":"TRACKED"}, "recvmsg":{"1":"TRACKED"},"getc":{},"fread":{"0":"TRACKED"},"read":{"1":"TRACKED"},"sprintf":{"0":"TRACKED","1":"%s","-2":"DYNAMIC_VALUE"},"memcpy":{"0":"TRACKED"},"strcpy":{"0":"TRACKED"},"strncpy":{"0":"TRACKED"},"getenv":{"return":"TRACKED"}},
+                            "affected_by":{"streamBuffGet":{"1":"TRACKED"},"gets":{},"scanf":{"0":"%s","-1":"DYNAMIC_VALUE"},"fscanf":{"1":"%s","-2":"DYNAMIC_VALUE"},"fgets":{"0":"TRACKED"},"recv":{"1":"TRACKED"},"SSL_read":{"1":"TRACKED"},"recvfrom":{"1":"TRACKED"}, "recvmsg":{"1":"TRACKED"},"getc":{},"fread":{"0":"TRACKED"},"read":{"1":"TRACKED"},"sprintf":{"0":"TRACKED","1":"%s","-2":"DYNAMIC_VALUE"},"memcpy":{"0":"TRACKED"},"strcpy":{"0":"TRACKED"},"strncpy":{"0":"TRACKED"},"getenv":{"return":"TRACKED"}},
                             "if_dependant": true,
                             "not_affected_by": ["strlen","toa","toi"]
                         },
@@ -1435,7 +1435,7 @@
                 "High":[
                     {
                         "1":{
-                            "affected_by":{"gets":{},"scanf":{"0":"%s","-1":"DYNAMIC_VALUE"},"fscanf":{"1":"%s","-2":"DYNAMIC_VALUE"},"fgets":{"0":"TRACKED"},"recv":{"1":"TRACKED"},"SSL_read":{"1":"TRACKED"},"recvfrom":{"1":"TRACKED"}, "recvmsg":{"1":"TRACKED"},"getc":{},"fread":{"0":"TRACKED"},"read":{"1":"TRACKED"},"sprintf":{"0":"TRACKED","1":"%s","-2":"DYNAMIC_VALUE"},"getenv":{"return":"TRACKED"}},
+                            "affected_by":{"streamBuffGet":{"1":"TRACKED"},"gets":{},"scanf":{"0":"%s","-1":"DYNAMIC_VALUE"},"fscanf":{"1":"%s","-2":"DYNAMIC_VALUE"},"fgets":{"0":"TRACKED"},"recv":{"1":"TRACKED"},"SSL_read":{"1":"TRACKED"},"recvfrom":{"1":"TRACKED"}, "recvmsg":{"1":"TRACKED"},"getc":{},"fread":{"0":"TRACKED"},"read":{"1":"TRACKED"},"sprintf":{"0":"TRACKED","1":"%s","-2":"DYNAMIC_VALUE"},"getenv":{"return":"TRACKED"}},
                             "if_dependant": false,
                             "not_affected_by": ["strlen","toa","toi"]
                         },
@@ -1451,7 +1451,7 @@
                 "Medium":[
                     {
                         "1":{
-                            "affected_by":{"gets":{},"scanf":{"0":"%s","-1":"DYNAMIC_VALUE"},"fscanf":{"1":"%s","-2":"DYNAMIC_VALUE"},"fgets":{"0":"TRACKED"},"recv":{"1":"TRACKED"},"SSL_read":{"1":"TRACKED"},"recvfrom":{"1":"TRACKED"}, "recvmsg":{"1":"TRACKED"},"getc":{},"fread":{"0":"TRACKED"},"read":{"1":"TRACKED"},"sprintf":{"0":"TRACKED","1":"%s","-2":"DYNAMIC_VALUE"},"memcpy":{"0":"TRACKED"},"strcpy":{"0":"TRACKED"},"strncpy":{"0":"TRACKED"},"getenv":{"return":"TRACKED"}},
+                            "affected_by":{"streamBuffGet":{"1":"TRACKED"},"gets":{},"scanf":{"0":"%s","-1":"DYNAMIC_VALUE"},"fscanf":{"1":"%s","-2":"DYNAMIC_VALUE"},"fgets":{"0":"TRACKED"},"recv":{"1":"TRACKED"},"SSL_read":{"1":"TRACKED"},"recvfrom":{"1":"TRACKED"}, "recvmsg":{"1":"TRACKED"},"getc":{},"fread":{"0":"TRACKED"},"read":{"1":"TRACKED"},"sprintf":{"0":"TRACKED","1":"%s","-2":"DYNAMIC_VALUE"},"memcpy":{"0":"TRACKED"},"strcpy":{"0":"TRACKED"},"strncpy":{"0":"TRACKED"},"getenv":{"return":"TRACKED"}},
                             "if_dependant": true,
                             "not_affected_by": ["strlen","toa","toi"]
                         },
@@ -1541,12 +1541,12 @@
                 "High":[
                     {
                         "1":{
-                            "affected_by":{"gets":{},"scanf":{"0":"%s","-1":"DYNAMIC_VALUE"},"fscanf":{"1":"%s","-2":"DYNAMIC_VALUE"},"fgets":{"0":"TRACKED"},"recv":{"1":"TRACKED"},"SSL_read":{"1":"TRACKED"},"recvfrom":{"1":"TRACKED"}, "recvmsg":{"1":"TRACKED"},"getc":{},"fread":{"0":"TRACKED"},"read":{"1":"TRACKED"},"sprintf":{"0":"TRACKED","1":"%s","-2":"DYNAMIC_VALUE"},"getenv":{"return":"TRACKED"}},
+                            "affected_by":{"streamBuffGet":{"1":"TRACKED"},"gets":{},"scanf":{"0":"%s","-1":"DYNAMIC_VALUE"},"fscanf":{"1":"%s","-2":"DYNAMIC_VALUE"},"fgets":{"0":"TRACKED"},"recv":{"1":"TRACKED"},"SSL_read":{"1":"TRACKED"},"recvfrom":{"1":"TRACKED"}, "recvmsg":{"1":"TRACKED"},"getc":{},"fread":{"0":"TRACKED"},"read":{"1":"TRACKED"},"sprintf":{"0":"TRACKED","1":"%s","-2":"DYNAMIC_VALUE"},"getenv":{"return":"TRACKED"}},
                             "if_dependant": false,
                             "not_affected_by": ["strlen","toa","toi","alloc"]
                         },
                         "2":{
-                            "affected_by":{"gets":{},"scanf":{"0":"%s","-1":"DYNAMIC_VALUE"},"fscanf":{"1":"%s","-2":"DYNAMIC_VALUE"},"fgets":{"0":"TRACKED"},"recv":{"1":"TRACKED"},"SSL_read":{"1":"TRACKED"},"recvfrom":{"1":"TRACKED"}, "recvmsg":{"1":"TRACKED"},"getc":{},"fread":{"0":"TRACKED"},"read":{"1":"TRACKED"},"sprintf":{"0":"TRACKED","1":"%s","-2":"DYNAMIC_VALUE"},"getenv":{"return":"TRACKED"}},
+                            "affected_by":{"streamBuffGet":{"1":"TRACKED"},"gets":{},"scanf":{"0":"%s","-1":"DYNAMIC_VALUE"},"fscanf":{"1":"%s","-2":"DYNAMIC_VALUE"},"fgets":{"0":"TRACKED"},"recv":{"1":"TRACKED"},"SSL_read":{"1":"TRACKED"},"recvfrom":{"1":"TRACKED"}, "recvmsg":{"1":"TRACKED"},"getc":{},"fread":{"0":"TRACKED"},"read":{"1":"TRACKED"},"sprintf":{"0":"TRACKED","1":"%s","-2":"DYNAMIC_VALUE"},"getenv":{"return":"TRACKED"}},
                             "if_dependant": false,
                             "not_affected_by": ["strlen","alloc"]
                         }
@@ -1555,12 +1555,12 @@
                 "Medium":[
                     {
                         "1":{
-                            "affected_by":{"gets":{},"scanf":{"0":"%s","-1":"DYNAMIC_VALUE"},"fscanf":{"1":"%s","-2":"DYNAMIC_VALUE"},"fgets":{"0":"TRACKED"},"recv":{"1":"TRACKED"},"SSL_read":{"1":"TRACKED"},"recvfrom":{"1":"TRACKED"}, "recvmsg":{"1":"TRACKED"},"getc":{},"fread":{"0":"TRACKED"},"read":{"1":"TRACKED"},"sprintf":{"0":"TRACKED","1":"%s","-2":"DYNAMIC_VALUE"},"memcpy":{"0":"TRACKED"},"strcpy":{"0":"TRACKED"},"strncpy":{"0":"TRACKED"},"getenv":{"return":"TRACKED"}},
+                            "affected_by":{"streamBuffGet":{"1":"TRACKED"},"gets":{},"scanf":{"0":"%s","-1":"DYNAMIC_VALUE"},"fscanf":{"1":"%s","-2":"DYNAMIC_VALUE"},"fgets":{"0":"TRACKED"},"recv":{"1":"TRACKED"},"SSL_read":{"1":"TRACKED"},"recvfrom":{"1":"TRACKED"}, "recvmsg":{"1":"TRACKED"},"getc":{},"fread":{"0":"TRACKED"},"read":{"1":"TRACKED"},"sprintf":{"0":"TRACKED","1":"%s","-2":"DYNAMIC_VALUE"},"memcpy":{"0":"TRACKED"},"strcpy":{"0":"TRACKED"},"strncpy":{"0":"TRACKED"},"getenv":{"return":"TRACKED"}},
                             "if_dependant": true,
                             "not_affected_by": ["strlen","toa","toi","alloc"]
                         },
                         "2":{
-                            "affected_by":{"gets":{},"scanf":{"0":"%s","-1":"DYNAMIC_VALUE"},"fscanf":{"1":"%s","-2":"DYNAMIC_VALUE"},"fgets":{"0":"TRACKED"},"recv":{"1":"TRACKED"},"SSL_read":{"1":"TRACKED"},"recvfrom":{"1":"TRACKED"}, "recvmsg":{"1":"TRACKED"},"getc":{},"fread":{"0":"TRACKED"},"read":{"1":"TRACKED"},"sprintf":{"0":"TRACKED","1":"%s","-2":"DYNAMIC_VALUE"},"memcpy":{"0":"TRACKED"},"strcpy":{"0":"TRACKED"},"strncpy":{"0":"TRACKED"},"getenv":{"return":"TRACKED"}},
+                            "affected_by":{"streamBuffGet":{"1":"TRACKED"},"gets":{},"scanf":{"0":"%s","-1":"DYNAMIC_VALUE"},"fscanf":{"1":"%s","-2":"DYNAMIC_VALUE"},"fgets":{"0":"TRACKED"},"recv":{"1":"TRACKED"},"SSL_read":{"1":"TRACKED"},"recvfrom":{"1":"TRACKED"}, "recvmsg":{"1":"TRACKED"},"getc":{},"fread":{"0":"TRACKED"},"read":{"1":"TRACKED"},"sprintf":{"0":"TRACKED","1":"%s","-2":"DYNAMIC_VALUE"},"memcpy":{"0":"TRACKED"},"strcpy":{"0":"TRACKED"},"strncpy":{"0":"TRACKED"},"getenv":{"return":"TRACKED"}},
                             "if_dependant": true,
                             "not_affected_by": ["strlen","alloc"]
                         }
@@ -1583,13 +1583,13 @@
                             "not_affected_by": ["strlen","toa","toi","alloc"]
                         },
                         "2":{
-                            "affected_by":{"gets":{},"scanf":{"0":"%s","-1":"DYNAMIC_VALUE"},"fscanf":{"1":"%s","-2":"DYNAMIC_VALUE"},"fgets":{"0":"TRACKED"},"recv":{"1":"TRACKED"},"SSL_read":{"1":"TRACKED"},"recvfrom":{"1":"TRACKED"}, "recvmsg":{"1":"TRACKED"},"getc":{},"fread":{"0":"TRACKED"},"read":{"1":"TRACKED"},"sprintf":{"0":"TRACKED","1":"%s","-2":"DYNAMIC_VALUE"},"memcpy":{"0":"TRACKED"},"strcpy":{"0":"TRACKED"},"strncpy":{"0":"TRACKED"},"getenv":{"return":"TRACKED"}},
+                            "affected_by":{"streamBuffGet":{"1":"TRACKED"},"gets":{},"scanf":{"0":"%s","-1":"DYNAMIC_VALUE"},"fscanf":{"1":"%s","-2":"DYNAMIC_VALUE"},"fgets":{"0":"TRACKED"},"recv":{"1":"TRACKED"},"SSL_read":{"1":"TRACKED"},"recvfrom":{"1":"TRACKED"}, "recvmsg":{"1":"TRACKED"},"getc":{},"fread":{"0":"TRACKED"},"read":{"1":"TRACKED"},"sprintf":{"0":"TRACKED","1":"%s","-2":"DYNAMIC_VALUE"},"memcpy":{"0":"TRACKED"},"strcpy":{"0":"TRACKED"},"strncpy":{"0":"TRACKED"},"getenv":{"return":"TRACKED"}},
                             "not_affected_by": ["strlen","alloc"]
                         }
                     },
                     {
                         "1":{
-                            "affected_by":{"gets":{},"scanf":{"0":"%s","-1":"DYNAMIC_VALUE"},"fscanf":{"1":"%s","-2":"DYNAMIC_VALUE"},"fgets":{"0":"TRACKED"},"recv":{"1":"TRACKED"},"SSL_read":{"1":"TRACKED"},"recvfrom":{"1":"TRACKED"}, "recvmsg":{"1":"TRACKED"},"getc":{},"fread":{"0":"TRACKED"},"read":{"1":"TRACKED"},"sprintf":{"0":"TRACKED","1":"%s","-2":"DYNAMIC_VALUE"},"memcpy":{"0":"TRACKED"},"strcpy":{"0":"TRACKED"},"strncpy":{"0":"TRACKED"},"getenv":{"return":"TRACKED"}},
+                            "affected_by":{"streamBuffGet":{"1":"TRACKED"},"gets":{},"scanf":{"0":"%s","-1":"DYNAMIC_VALUE"},"fscanf":{"1":"%s","-2":"DYNAMIC_VALUE"},"fgets":{"0":"TRACKED"},"recv":{"1":"TRACKED"},"SSL_read":{"1":"TRACKED"},"recvfrom":{"1":"TRACKED"}, "recvmsg":{"1":"TRACKED"},"getc":{},"fread":{"0":"TRACKED"},"read":{"1":"TRACKED"},"sprintf":{"0":"TRACKED","1":"%s","-2":"DYNAMIC_VALUE"},"memcpy":{"0":"TRACKED"},"strcpy":{"0":"TRACKED"},"strncpy":{"0":"TRACKED"},"getenv":{"return":"TRACKED"}},
                             "not_affected_by": ["strlen","toa","toi","alloc"]
                         },
                         "2":{
@@ -1653,12 +1653,12 @@
                 "High":[
                     {
                         "1":{
-                            "affected_by":{"gets":{},"scanf":{"0":"%s","-1":"DYNAMIC_VALUE"},"fscanf":{"1":"%s","-2":"DYNAMIC_VALUE"},"fgets":{"0":"TRACKED"},"recv":{"1":"TRACKED"},"SSL_read":{"1":"TRACKED"},"recvfrom":{"1":"TRACKED"}, "recvmsg":{"1":"TRACKED"},"getc":{},"fread":{"0":"TRACKED"},"read":{"1":"TRACKED"},"sprintf":{"0":"TRACKED","1":"%s","-2":"DYNAMIC_VALUE"},"getenv":{"return":"TRACKED"}},
+                            "affected_by":{"streamBuffGet":{"1":"TRACKED"},"gets":{},"scanf":{"0":"%s","-1":"DYNAMIC_VALUE"},"fscanf":{"1":"%s","-2":"DYNAMIC_VALUE"},"fgets":{"0":"TRACKED"},"recv":{"1":"TRACKED"},"SSL_read":{"1":"TRACKED"},"recvfrom":{"1":"TRACKED"}, "recvmsg":{"1":"TRACKED"},"getc":{},"fread":{"0":"TRACKED"},"read":{"1":"TRACKED"},"sprintf":{"0":"TRACKED","1":"%s","-2":"DYNAMIC_VALUE"},"getenv":{"return":"TRACKED"}},
                             "if_dependant": false,
                             "not_affected_by": ["strlen","toa","toi","alloc"]
                         },
                         "2":{
-                            "affected_by":{"gets":{},"scanf":{"0":"%s","-1":"DYNAMIC_VALUE"},"fscanf":{"1":"%s","-2":"DYNAMIC_VALUE"},"fgets":{"0":"TRACKED"},"recv":{"1":"TRACKED"},"SSL_read":{"1":"TRACKED"},"recvfrom":{"1":"TRACKED"}, "recvmsg":{"1":"TRACKED"},"getc":{},"fread":{"0":"TRACKED"},"read":{"1":"TRACKED"},"sprintf":{"0":"TRACKED","1":"%s","-2":"DYNAMIC_VALUE"},"getenv":{"return":"TRACKED"}},
+                            "affected_by":{"streamBuffGet":{"1":"TRACKED"},"gets":{},"scanf":{"0":"%s","-1":"DYNAMIC_VALUE"},"fscanf":{"1":"%s","-2":"DYNAMIC_VALUE"},"fgets":{"0":"TRACKED"},"recv":{"1":"TRACKED"},"SSL_read":{"1":"TRACKED"},"recvfrom":{"1":"TRACKED"}, "recvmsg":{"1":"TRACKED"},"getc":{},"fread":{"0":"TRACKED"},"read":{"1":"TRACKED"},"sprintf":{"0":"TRACKED","1":"%s","-2":"DYNAMIC_VALUE"},"getenv":{"return":"TRACKED"}},
                             "if_dependant": false,
                             "not_affected_by": ["strlen","alloc"]
                         }
@@ -1667,12 +1667,12 @@
                 "Medium":[
                     {
                         "1":{
-                            "affected_by":{"gets":{},"scanf":{"0":"%s","-1":"DYNAMIC_VALUE"},"fscanf":{"1":"%s","-2":"DYNAMIC_VALUE"},"fgets":{"0":"TRACKED"},"recv":{"1":"TRACKED"},"SSL_read":{"1":"TRACKED"},"recvfrom":{"1":"TRACKED"}, "recvmsg":{"1":"TRACKED"},"getc":{},"fread":{"0":"TRACKED"},"read":{"1":"TRACKED"},"sprintf":{"0":"TRACKED","1":"%s","-2":"DYNAMIC_VALUE"},"memcpy":{"0":"TRACKED"},"strcpy":{"0":"TRACKED"},"strncpy":{"0":"TRACKED"},"getenv":{"return":"TRACKED"}},
+                            "affected_by":{"streamBuffGet":{"1":"TRACKED"},"gets":{},"scanf":{"0":"%s","-1":"DYNAMIC_VALUE"},"fscanf":{"1":"%s","-2":"DYNAMIC_VALUE"},"fgets":{"0":"TRACKED"},"recv":{"1":"TRACKED"},"SSL_read":{"1":"TRACKED"},"recvfrom":{"1":"TRACKED"}, "recvmsg":{"1":"TRACKED"},"getc":{},"fread":{"0":"TRACKED"},"read":{"1":"TRACKED"},"sprintf":{"0":"TRACKED","1":"%s","-2":"DYNAMIC_VALUE"},"memcpy":{"0":"TRACKED"},"strcpy":{"0":"TRACKED"},"strncpy":{"0":"TRACKED"},"getenv":{"return":"TRACKED"}},
                             "if_dependant": true,
                             "not_affected_by": ["strlen","toa","toi","alloc"]
                         },
                         "2":{
-                            "affected_by":{"gets":{},"scanf":{"0":"%s","-1":"DYNAMIC_VALUE"},"fscanf":{"1":"%s","-2":"DYNAMIC_VALUE"},"fgets":{"0":"TRACKED"},"recv":{"1":"TRACKED"},"SSL_read":{"1":"TRACKED"},"recvfrom":{"1":"TRACKED"}, "recvmsg":{"1":"TRACKED"},"getc":{},"fread":{"0":"TRACKED"},"read":{"1":"TRACKED"},"sprintf":{"0":"TRACKED","1":"%s","-2":"DYNAMIC_VALUE"},"memcpy":{"0":"TRACKED"},"strcpy":{"0":"TRACKED"},"strncpy":{"0":"TRACKED"},"getenv":{"return":"TRACKED"}},
+                            "affected_by":{"streamBuffGet":{"1":"TRACKED"},"gets":{},"scanf":{"0":"%s","-1":"DYNAMIC_VALUE"},"fscanf":{"1":"%s","-2":"DYNAMIC_VALUE"},"fgets":{"0":"TRACKED"},"recv":{"1":"TRACKED"},"SSL_read":{"1":"TRACKED"},"recvfrom":{"1":"TRACKED"}, "recvmsg":{"1":"TRACKED"},"getc":{},"fread":{"0":"TRACKED"},"read":{"1":"TRACKED"},"sprintf":{"0":"TRACKED","1":"%s","-2":"DYNAMIC_VALUE"},"memcpy":{"0":"TRACKED"},"strcpy":{"0":"TRACKED"},"strncpy":{"0":"TRACKED"},"getenv":{"return":"TRACKED"}},
                             "if_dependant": true,
                             "not_affected_by": ["strlen","alloc"]
                         }
@@ -1695,13 +1695,13 @@
                             "not_affected_by": ["strlen","toa","toi","alloc"]
                         },
                         "2":{
-                            "affected_by":{"gets":{},"scanf":{"0":"%s","-1":"DYNAMIC_VALUE"},"fscanf":{"1":"%s","-2":"DYNAMIC_VALUE"},"fgets":{"0":"TRACKED"},"recv":{"1":"TRACKED"},"SSL_read":{"1":"TRACKED"},"recvfrom":{"1":"TRACKED"}, "recvmsg":{"1":"TRACKED"},"getc":{},"fread":{"0":"TRACKED"},"read":{"1":"TRACKED"},"sprintf":{"0":"TRACKED","1":"%s","-2":"DYNAMIC_VALUE"},"memcpy":{"0":"TRACKED"},"strcpy":{"0":"TRACKED"},"strncpy":{"0":"TRACKED"},"getenv":{"return":"TRACKED"}},
+                            "affected_by":{"streamBuffGet":{"1":"TRACKED"},"gets":{},"scanf":{"0":"%s","-1":"DYNAMIC_VALUE"},"fscanf":{"1":"%s","-2":"DYNAMIC_VALUE"},"fgets":{"0":"TRACKED"},"recv":{"1":"TRACKED"},"SSL_read":{"1":"TRACKED"},"recvfrom":{"1":"TRACKED"}, "recvmsg":{"1":"TRACKED"},"getc":{},"fread":{"0":"TRACKED"},"read":{"1":"TRACKED"},"sprintf":{"0":"TRACKED","1":"%s","-2":"DYNAMIC_VALUE"},"memcpy":{"0":"TRACKED"},"strcpy":{"0":"TRACKED"},"strncpy":{"0":"TRACKED"},"getenv":{"return":"TRACKED"}},
                             "not_affected_by": ["strlen","alloc"]
                         }
                     },
                     {
                         "1":{
-                            "affected_by":{"gets":{},"scanf":{"0":"%s","-1":"DYNAMIC_VALUE"},"fscanf":{"1":"%s","-2":"DYNAMIC_VALUE"},"fgets":{"0":"TRACKED"},"recv":{"1":"TRACKED"},"SSL_read":{"1":"TRACKED"},"recvfrom":{"1":"TRACKED"}, "recvmsg":{"1":"TRACKED"},"getc":{},"fread":{"0":"TRACKED"},"read":{"1":"TRACKED"},"sprintf":{"0":"TRACKED","1":"%s","-2":"DYNAMIC_VALUE"},"memcpy":{"0":"TRACKED"},"strcpy":{"0":"TRACKED"},"strncpy":{"0":"TRACKED"},"getenv":{"return":"TRACKED"}},
+                            "affected_by":{"streamBuffGet":{"1":"TRACKED"},"gets":{},"scanf":{"0":"%s","-1":"DYNAMIC_VALUE"},"fscanf":{"1":"%s","-2":"DYNAMIC_VALUE"},"fgets":{"0":"TRACKED"},"recv":{"1":"TRACKED"},"SSL_read":{"1":"TRACKED"},"recvfrom":{"1":"TRACKED"}, "recvmsg":{"1":"TRACKED"},"getc":{},"fread":{"0":"TRACKED"},"read":{"1":"TRACKED"},"sprintf":{"0":"TRACKED","1":"%s","-2":"DYNAMIC_VALUE"},"memcpy":{"0":"TRACKED"},"strcpy":{"0":"TRACKED"},"strncpy":{"0":"TRACKED"},"getenv":{"return":"TRACKED"}},
                             "not_affected_by": ["strlen","toa","toi","alloc"]
                         },
                         "2":{
@@ -1792,7 +1792,7 @@
                 "Medium":[
                     {
                         "0":{
-                            "affected_by":{"gets":{},"scanf":{"0":"%s","-1":"DYNAMIC_VALUE"},"fscanf":{"1":"%s","-2":"DYNAMIC_VALUE"},"fgets":{"0":"TRACKED"},"recv":{"1":"TRACKED"},"SSL_read":{"1":"TRACKED"},"recvfrom":{"1":"TRACKED"}, "recvmsg":{"1":"TRACKED"},"getc":{},"fread":{"0":"TRACKED"},"read":{"1":"TRACKED"},"sprintf":{"0":"TRACKED","1":"%s","-2":"DYNAMIC_VALUE"},"getenv":{"return":"TRACKED"}}
+                            "affected_by":{"streamBuffGet":{"1":"TRACKED"},"gets":{},"scanf":{"0":"%s","-1":"DYNAMIC_VALUE"},"fscanf":{"1":"%s","-2":"DYNAMIC_VALUE"},"fgets":{"0":"TRACKED"},"recv":{"1":"TRACKED"},"SSL_read":{"1":"TRACKED"},"recvfrom":{"1":"TRACKED"}, "recvmsg":{"1":"TRACKED"},"getc":{},"fread":{"0":"TRACKED"},"read":{"1":"TRACKED"},"sprintf":{"0":"TRACKED","1":"%s","-2":"DYNAMIC_VALUE"},"getenv":{"return":"TRACKED"}}
                         },
                         "1":{
                             "constant_value": ["%s"]
@@ -1832,7 +1832,7 @@
                 "High":[
                     {
                         "0":{
-                            "affected_by":{"gets":{},"scanf":{"0":"%s","-1":"DYNAMIC_VALUE"},"fscanf":{"1":"%s","-2":"DYNAMIC_VALUE"},"fgets":{"0":"TRACKED"},"recv":{"1":"TRACKED"},"SSL_read":{"1":"TRACKED"},"recvfrom":{"1":"TRACKED"}, "recvmsg":{"1":"TRACKED"},"getc":{},"fread":{"0":"TRACKED"},"read":{"1":"TRACKED"},"sprintf":{"0":"TRACKED","1":"%s","-2":"DYNAMIC_VALUE"},"getenv":{"return":"TRACKED"}},
+                            "affected_by":{"streamBuffGet":{"1":"TRACKED"},"gets":{},"scanf":{"0":"%s","-1":"DYNAMIC_VALUE"},"fscanf":{"1":"%s","-2":"DYNAMIC_VALUE"},"fgets":{"0":"TRACKED"},"recv":{"1":"TRACKED"},"SSL_read":{"1":"TRACKED"},"recvfrom":{"1":"TRACKED"}, "recvmsg":{"1":"TRACKED"},"getc":{},"fread":{"0":"TRACKED"},"read":{"1":"TRACKED"},"sprintf":{"0":"TRACKED","1":"%s","-2":"DYNAMIC_VALUE"},"getenv":{"return":"TRACKED"}},
                             "if_dependant": false
                         },
                         "1":{
@@ -1843,7 +1843,7 @@
                 "Medium":[
                     {
                         "0":{
-                            "affected_by":{"gets":{},"scanf":{"0":"%s","-1":"DYNAMIC_VALUE"},"fscanf":{"1":"%s","-2":"DYNAMIC_VALUE"},"fgets":{"0":"TRACKED"},"recv":{"1":"TRACKED"},"SSL_read":{"1":"TRACKED"},"recvfrom":{"1":"TRACKED"}, "recvmsg":{"1":"TRACKED"},"getc":{},"fread":{"0":"TRACKED"},"read":{"1":"TRACKED"},"sprintf":{"0":"TRACKED","1":"%s","-2":"DYNAMIC_VALUE"},"memcpy":{"0":"TRACKED"},"strcpy":{"0":"TRACKED"},"strncpy":{"0":"TRACKED"},"getenv":{"return":"TRACKED"}},
+                            "affected_by":{"streamBuffGet":{"1":"TRACKED"},"gets":{},"scanf":{"0":"%s","-1":"DYNAMIC_VALUE"},"fscanf":{"1":"%s","-2":"DYNAMIC_VALUE"},"fgets":{"0":"TRACKED"},"recv":{"1":"TRACKED"},"SSL_read":{"1":"TRACKED"},"recvfrom":{"1":"TRACKED"}, "recvmsg":{"1":"TRACKED"},"getc":{},"fread":{"0":"TRACKED"},"read":{"1":"TRACKED"},"sprintf":{"0":"TRACKED","1":"%s","-2":"DYNAMIC_VALUE"},"memcpy":{"0":"TRACKED"},"strcpy":{"0":"TRACKED"},"strncpy":{"0":"TRACKED"},"getenv":{"return":"TRACKED"}},
                             "if_dependant": true
                         },
                         "1":{
@@ -1893,7 +1893,7 @@
                 "Medium":[
                     {
                         "-2":{
-                            "affected_by":{"gets":{},"scanf":{"0":"%s","-1":"DYNAMIC_VALUE"},"fscanf":{"1":"%s","-2":"DYNAMIC_VALUE"},"fgets":{"0":"TRACKED"},"recv":{"1":"TRACKED"},"SSL_read":{"1":"TRACKED"},"recvfrom":{"1":"TRACKED"}, "recvmsg":{"1":"TRACKED"},"getc":{},"fread":{"0":"TRACKED"},"read":{"1":"TRACKED"},"sprintf":{"0":"TRACKED","1":"%s","-2":"DYNAMIC_VALUE"},"memcpy":{"0":"TRACKED"},"strcpy":{"0":"TRACKED"},"strncpy":{"0":"TRACKED"},"getenv":{"return":"TRACKED"}},
+                            "affected_by":{"streamBuffGet":{"1":"TRACKED"},"gets":{},"scanf":{"0":"%s","-1":"DYNAMIC_VALUE"},"fscanf":{"1":"%s","-2":"DYNAMIC_VALUE"},"fgets":{"0":"TRACKED"},"recv":{"1":"TRACKED"},"SSL_read":{"1":"TRACKED"},"recvfrom":{"1":"TRACKED"}, "recvmsg":{"1":"TRACKED"},"getc":{},"fread":{"0":"TRACKED"},"read":{"1":"TRACKED"},"sprintf":{"0":"TRACKED","1":"%s","-2":"DYNAMIC_VALUE"},"memcpy":{"0":"TRACKED"},"strcpy":{"0":"TRACKED"},"strncpy":{"0":"TRACKED"},"getenv":{"return":"TRACKED"}},
                             "if_dependant": false,
                             "not_affected_by": ["strlen","toa","toi"]
                         },
@@ -1915,7 +1915,7 @@
                 "Low":[
                     {
                         "-2":{
-                            "affected_by":{"gets":{},"scanf":{"0":"%s","-1":"DYNAMIC_VALUE"},"fscanf":{"1":"%s","-2":"DYNAMIC_VALUE"},"fgets":{"0":"TRACKED"},"recv":{"1":"TRACKED"},"SSL_read":{"1":"TRACKED"},"recvfrom":{"1":"TRACKED"}, "recvmsg":{"1":"TRACKED"},"getc":{},"fread":{"0":"TRACKED"},"read":{"1":"TRACKED"},"sprintf":{"0":"TRACKED","1":"%s","-2":"DYNAMIC_VALUE"},"memcpy":{"0":"TRACKED"},"strcpy":{"0":"TRACKED"},"strncpy":{"0":"TRACKED"},"getenv":{"return":"TRACKED"}},
+                            "affected_by":{"streamBuffGet":{"1":"TRACKED"},"gets":{},"scanf":{"0":"%s","-1":"DYNAMIC_VALUE"},"fscanf":{"1":"%s","-2":"DYNAMIC_VALUE"},"fgets":{"0":"TRACKED"},"recv":{"1":"TRACKED"},"SSL_read":{"1":"TRACKED"},"recvfrom":{"1":"TRACKED"}, "recvmsg":{"1":"TRACKED"},"getc":{},"fread":{"0":"TRACKED"},"read":{"1":"TRACKED"},"sprintf":{"0":"TRACKED","1":"%s","-2":"DYNAMIC_VALUE"},"memcpy":{"0":"TRACKED"},"strcpy":{"0":"TRACKED"},"strncpy":{"0":"TRACKED"},"getenv":{"return":"TRACKED"}},
                             "if_dependant": true,
                             "not_affected_by": ["strlen","toa","toi"]
                         },
@@ -1958,7 +1958,7 @@
                 "High":[
                     {
                         "2":{
-                            "affected_by":{"gets":{},"scanf":{"0":"%s","-1":"DYNAMIC_VALUE"},"fscanf":{"1":"%s","-2":"DYNAMIC_VALUE"},"fgets":{"0":"TRACKED"},"recv":{"1":"TRACKED"},"SSL_read":{"1":"TRACKED"},"recvfrom":{"1":"TRACKED"}, "recvmsg":{"1":"TRACKED"},"getc":{},"fread":{"0":"TRACKED"},"read":{"1":"TRACKED"},"sprintf":{"0":"TRACKED","1":"%s","-2":"DYNAMIC_VALUE"},"getenv":{"return":"TRACKED"}},
+                            "affected_by":{"streamBuffGet":{"1":"TRACKED"},"gets":{},"scanf":{"0":"%s","-1":"DYNAMIC_VALUE"},"fscanf":{"1":"%s","-2":"DYNAMIC_VALUE"},"fgets":{"0":"TRACKED"},"recv":{"1":"TRACKED"},"SSL_read":{"1":"TRACKED"},"recvfrom":{"1":"TRACKED"}, "recvmsg":{"1":"TRACKED"},"getc":{},"fread":{"0":"TRACKED"},"read":{"1":"TRACKED"},"sprintf":{"0":"TRACKED","1":"%s","-2":"DYNAMIC_VALUE"},"getenv":{"return":"TRACKED"}},
                             "if_dependant": false,
                             "not_affected_by": ["strlen","toa","toi"]
                         },
@@ -1978,7 +1978,7 @@
                 "Medium":[
                     {
                         "2":{
-                            "affected_by":{"gets":{},"scanf":{"0":"%s","-1":"DYNAMIC_VALUE"},"fscanf":{"1":"%s","-2":"DYNAMIC_VALUE"},"fgets":{"0":"TRACKED"},"recv":{"1":"TRACKED"},"SSL_read":{"1":"TRACKED"},"recvfrom":{"1":"TRACKED"}, "recvmsg":{"1":"TRACKED"},"getc":{},"fread":{"0":"TRACKED"},"read":{"1":"TRACKED"},"sprintf":{"0":"TRACKED","1":"%s","-2":"DYNAMIC_VALUE"},"memcpy":{"0":"TRACKED"},"strcpy":{"0":"TRACKED"},"strncpy":{"0":"TRACKED"},"getenv":{"return":"TRACKED"}},
+                            "affected_by":{"streamBuffGet":{"1":"TRACKED"},"gets":{},"scanf":{"0":"%s","-1":"DYNAMIC_VALUE"},"fscanf":{"1":"%s","-2":"DYNAMIC_VALUE"},"fgets":{"0":"TRACKED"},"recv":{"1":"TRACKED"},"SSL_read":{"1":"TRACKED"},"recvfrom":{"1":"TRACKED"}, "recvmsg":{"1":"TRACKED"},"getc":{},"fread":{"0":"TRACKED"},"read":{"1":"TRACKED"},"sprintf":{"0":"TRACKED","1":"%s","-2":"DYNAMIC_VALUE"},"memcpy":{"0":"TRACKED"},"strcpy":{"0":"TRACKED"},"strncpy":{"0":"TRACKED"},"getenv":{"return":"TRACKED"}},
                             "if_dependant": true,
                             "not_affected_by": ["strlen","toa","toi"]
                         },
@@ -2084,7 +2084,7 @@
                 "High":[
                     {
                         "2":{
-                            "affected_by":{"gets":{},"scanf":{"0":"%s","-1":"DYNAMIC_VALUE"},"fscanf":{"1":"%s","-2":"DYNAMIC_VALUE"},"fgets":{"0":"TRACKED"},"recv":{"1":"TRACKED"},"SSL_read":{"1":"TRACKED"},"recvfrom":{"1":"TRACKED"}, "recvmsg":{"1":"TRACKED"},"getc":{},"fread":{"0":"TRACKED"},"read":{"1":"TRACKED"},"sprintf":{"0":"TRACKED","1":"%s","-2":"DYNAMIC_VALUE"},"getenv":{"return":"TRACKED"}},
+                            "affected_by":{"streamBuffGet":{"1":"TRACKED"},"gets":{},"scanf":{"0":"%s","-1":"DYNAMIC_VALUE"},"fscanf":{"1":"%s","-2":"DYNAMIC_VALUE"},"fgets":{"0":"TRACKED"},"recv":{"1":"TRACKED"},"SSL_read":{"1":"TRACKED"},"recvfrom":{"1":"TRACKED"}, "recvmsg":{"1":"TRACKED"},"getc":{},"fread":{"0":"TRACKED"},"read":{"1":"TRACKED"},"sprintf":{"0":"TRACKED","1":"%s","-2":"DYNAMIC_VALUE"},"getenv":{"return":"TRACKED"}},
                             "if_dependant": false,
                             "not_affected_by": ["strlen","toa","toi"]
                         },
@@ -2104,7 +2104,7 @@
                 "Medium":[
                     {
                         "2":{
-                            "affected_by":{"gets":{},"scanf":{"0":"%s","-1":"DYNAMIC_VALUE"},"fscanf":{"1":"%s","-2":"DYNAMIC_VALUE"},"fgets":{"0":"TRACKED"},"recv":{"1":"TRACKED"},"SSL_read":{"1":"TRACKED"},"recvfrom":{"1":"TRACKED"}, "recvmsg":{"1":"TRACKED"},"getc":{},"fread":{"0":"TRACKED"},"read":{"1":"TRACKED"},"sprintf":{"0":"TRACKED","1":"%s","-2":"DYNAMIC_VALUE"},"memcpy":{"0":"TRACKED"},"strcpy":{"0":"TRACKED"},"strncpy":{"0":"TRACKED"},"getenv":{"return":"TRACKED"}},
+                            "affected_by":{"streamBuffGet":{"1":"TRACKED"},"gets":{},"scanf":{"0":"%s","-1":"DYNAMIC_VALUE"},"fscanf":{"1":"%s","-2":"DYNAMIC_VALUE"},"fgets":{"0":"TRACKED"},"recv":{"1":"TRACKED"},"SSL_read":{"1":"TRACKED"},"recvfrom":{"1":"TRACKED"}, "recvmsg":{"1":"TRACKED"},"getc":{},"fread":{"0":"TRACKED"},"read":{"1":"TRACKED"},"sprintf":{"0":"TRACKED","1":"%s","-2":"DYNAMIC_VALUE"},"memcpy":{"0":"TRACKED"},"strcpy":{"0":"TRACKED"},"strncpy":{"0":"TRACKED"},"getenv":{"return":"TRACKED"}},
                             "if_dependant": true,
                             "not_affected_by": ["strlen","toa","toi"]
                         },
@@ -2208,7 +2208,7 @@
                 "High":[
                     {
                         "-3":{
-                            "affected_by":{"gets":{},"scanf":{"0":"%s","-1":"DYNAMIC_VALUE"},"fscanf":{"1":"%s","-2":"DYNAMIC_VALUE"},"fgets":{"0":"TRACKED"},"recv":{"1":"TRACKED"},"SSL_read":{"1":"TRACKED"},"recvfrom":{"1":"TRACKED"}, "recvmsg":{"1":"TRACKED"},"getc":{},"fread":{"0":"TRACKED"},"read":{"1":"TRACKED"},"sprintf":{"0":"TRACKED","1":"%s","-2":"DYNAMIC_VALUE"},"getenv":{"return":"TRACKED"}},
+                            "affected_by":{"streamBuffGet":{"1":"TRACKED"},"gets":{},"scanf":{"0":"%s","-1":"DYNAMIC_VALUE"},"fscanf":{"1":"%s","-2":"DYNAMIC_VALUE"},"fgets":{"0":"TRACKED"},"recv":{"1":"TRACKED"},"SSL_read":{"1":"TRACKED"},"recvfrom":{"1":"TRACKED"}, "recvmsg":{"1":"TRACKED"},"getc":{},"fread":{"0":"TRACKED"},"read":{"1":"TRACKED"},"sprintf":{"0":"TRACKED","1":"%s","-2":"DYNAMIC_VALUE"},"getenv":{"return":"TRACKED"}},
                             "if_dependant": false,
                             "not_affected_by": ["strlen","toa","toi","alloc"]
                         },
@@ -2224,7 +2224,7 @@
                 "Medium":[
                     {
                         "-3":{
-                            "affected_by":{"gets":{},"scanf":{"0":"%s","-1":"DYNAMIC_VALUE"},"fscanf":{"1":"%s","-2":"DYNAMIC_VALUE"},"fgets":{"0":"TRACKED"},"recv":{"1":"TRACKED"},"SSL_read":{"1":"TRACKED"},"recvfrom":{"1":"TRACKED"}, "recvmsg":{"1":"TRACKED"},"getc":{},"fread":{"0":"TRACKED"},"read":{"1":"TRACKED"},"sprintf":{"0":"TRACKED","1":"%s","-2":"DYNAMIC_VALUE"},"memcpy":{"0":"TRACKED"},"strcpy":{"0":"TRACKED"},"strncpy":{"0":"TRACKED"},"getenv":{"return":"TRACKED"}},
+                            "affected_by":{"streamBuffGet":{"1":"TRACKED"},"gets":{},"scanf":{"0":"%s","-1":"DYNAMIC_VALUE"},"fscanf":{"1":"%s","-2":"DYNAMIC_VALUE"},"fgets":{"0":"TRACKED"},"recv":{"1":"TRACKED"},"SSL_read":{"1":"TRACKED"},"recvfrom":{"1":"TRACKED"}, "recvmsg":{"1":"TRACKED"},"getc":{},"fread":{"0":"TRACKED"},"read":{"1":"TRACKED"},"sprintf":{"0":"TRACKED","1":"%s","-2":"DYNAMIC_VALUE"},"memcpy":{"0":"TRACKED"},"strcpy":{"0":"TRACKED"},"strncpy":{"0":"TRACKED"},"getenv":{"return":"TRACKED"}},
                             "if_dependant": true,
                             "not_affected_by": ["strlen","toa","toi","alloc"]
                         },
@@ -2308,7 +2308,7 @@
                 "High":[
                     {
                         "2":{
-                            "affected_by":{"gets":{},"scanf":{"0":"%s","-1":"DYNAMIC_VALUE"},"fscanf":{"1":"%s","-2":"DYNAMIC_VALUE"},"fgets":{"0":"TRACKED"},"recv":{"1":"TRACKED"},"SSL_read":{"1":"TRACKED"},"recvfrom":{"1":"TRACKED"}, "recvmsg":{"1":"TRACKED"},"getc":{},"fread":{"0":"TRACKED"},"read":{"1":"TRACKED"},"sprintf":{"0":"TRACKED","1":"%s","-2":"DYNAMIC_VALUE"},"getenv":{"return":"TRACKED"}},
+                            "affected_by":{"streamBuffGet":{"1":"TRACKED"},"gets":{},"scanf":{"0":"%s","-1":"DYNAMIC_VALUE"},"fscanf":{"1":"%s","-2":"DYNAMIC_VALUE"},"fgets":{"0":"TRACKED"},"recv":{"1":"TRACKED"},"SSL_read":{"1":"TRACKED"},"recvfrom":{"1":"TRACKED"}, "recvmsg":{"1":"TRACKED"},"getc":{},"fread":{"0":"TRACKED"},"read":{"1":"TRACKED"},"sprintf":{"0":"TRACKED","1":"%s","-2":"DYNAMIC_VALUE"},"getenv":{"return":"TRACKED"}},
                             "if_dependant": false,
                             "not_affected_by": ["strlen","toa","toi"]
                         }
@@ -2317,7 +2317,7 @@
                 "Medium":[
                     {
                         "2":{
-                            "affected_by":{"gets":{},"scanf":{"0":"%s","-1":"DYNAMIC_VALUE"},"fscanf":{"1":"%s","-2":"DYNAMIC_VALUE"},"fgets":{"0":"TRACKED"},"recv":{"1":"TRACKED"},"SSL_read":{"1":"TRACKED"},"recvfrom":{"1":"TRACKED"}, "recvmsg":{"1":"TRACKED"},"getc":{},"fread":{"0":"TRACKED"},"read":{"1":"TRACKED"},"sprintf":{"0":"TRACKED","1":"%s","-2":"DYNAMIC_VALUE"},"memcpy":{"0":"TRACKED"},"strcpy":{"0":"TRACKED"},"strncpy":{"0":"TRACKED"},"getenv":{"return":"TRACKED"}},
+                            "affected_by":{"streamBuffGet":{"1":"TRACKED"},"gets":{},"scanf":{"0":"%s","-1":"DYNAMIC_VALUE"},"fscanf":{"1":"%s","-2":"DYNAMIC_VALUE"},"fgets":{"0":"TRACKED"},"recv":{"1":"TRACKED"},"SSL_read":{"1":"TRACKED"},"recvfrom":{"1":"TRACKED"}, "recvmsg":{"1":"TRACKED"},"getc":{},"fread":{"0":"TRACKED"},"read":{"1":"TRACKED"},"sprintf":{"0":"TRACKED","1":"%s","-2":"DYNAMIC_VALUE"},"memcpy":{"0":"TRACKED"},"strcpy":{"0":"TRACKED"},"strncpy":{"0":"TRACKED"},"getenv":{"return":"TRACKED"}},
                             "if_dependant": true,
                             "not_affected_by": ["strlen","toa","toi"]
                         }
@@ -2366,7 +2366,7 @@
                 "High":[
                     {
                         "3":{
-                            "affected_by":{"gets":{},"scanf":{"0":"%s","-1":"DYNAMIC_VALUE"},"fscanf":{"1":"%s","-2":"DYNAMIC_VALUE"},"fgets":{"0":"TRACKED"},"recv":{"1":"TRACKED"},"SSL_read":{"1":"TRACKED"},"recvfrom":{"1":"TRACKED"}, "recvmsg":{"1":"TRACKED"},"getc":{},"fread":{"0":"TRACKED"},"read":{"1":"TRACKED"},"sprintf":{"0":"TRACKED","1":"%s","-2":"DYNAMIC_VALUE"},"getenv":{"return":"TRACKED"}},
+                            "affected_by":{"streamBuffGet":{"1":"TRACKED"},"gets":{},"scanf":{"0":"%s","-1":"DYNAMIC_VALUE"},"fscanf":{"1":"%s","-2":"DYNAMIC_VALUE"},"fgets":{"0":"TRACKED"},"recv":{"1":"TRACKED"},"SSL_read":{"1":"TRACKED"},"recvfrom":{"1":"TRACKED"}, "recvmsg":{"1":"TRACKED"},"getc":{},"fread":{"0":"TRACKED"},"read":{"1":"TRACKED"},"sprintf":{"0":"TRACKED","1":"%s","-2":"DYNAMIC_VALUE"},"getenv":{"return":"TRACKED"}},
                             "if_dependant": false,
                             "not_affected_by": ["strlen","toa","toi"]
                         },
@@ -2379,7 +2379,7 @@
                 "Medium":[
                     {
                         "3":{
-                            "affected_by":{"gets":{},"scanf":{"0":"%s","-1":"DYNAMIC_VALUE"},"fscanf":{"1":"%s","-2":"DYNAMIC_VALUE"},"fgets":{"0":"TRACKED"},"recv":{"1":"TRACKED"},"SSL_read":{"1":"TRACKED"},"recvfrom":{"1":"TRACKED"}, "recvmsg":{"1":"TRACKED"},"getc":{},"fread":{"0":"TRACKED"},"read":{"1":"TRACKED"},"sprintf":{"0":"TRACKED","1":"%s","-2":"DYNAMIC_VALUE"},"memcpy":{"0":"TRACKED"},"strcpy":{"0":"TRACKED"},"strncpy":{"0":"TRACKED"},"getenv":{"return":"TRACKED"}},
+                            "affected_by":{"streamBuffGet":{"1":"TRACKED"},"gets":{},"scanf":{"0":"%s","-1":"DYNAMIC_VALUE"},"fscanf":{"1":"%s","-2":"DYNAMIC_VALUE"},"fgets":{"0":"TRACKED"},"recv":{"1":"TRACKED"},"SSL_read":{"1":"TRACKED"},"recvfrom":{"1":"TRACKED"}, "recvmsg":{"1":"TRACKED"},"getc":{},"fread":{"0":"TRACKED"},"read":{"1":"TRACKED"},"sprintf":{"0":"TRACKED","1":"%s","-2":"DYNAMIC_VALUE"},"memcpy":{"0":"TRACKED"},"strcpy":{"0":"TRACKED"},"strncpy":{"0":"TRACKED"},"getenv":{"return":"TRACKED"}},
                             "if_dependant": true,
                             "not_affected_by": ["strlen","toa","toi"]
                         },
@@ -2464,7 +2464,7 @@
                 "High":[
                     {
                         "0":{
-                            "affected_by":{"gets":{},"scanf":{"0":"%s","-1":"DYNAMIC_VALUE"},"fscanf":{"1":"%s","-2":"DYNAMIC_VALUE"},"fgets":{"0":"TRACKED"},"recv":{"1":"TRACKED"},"SSL_read":{"1":"TRACKED"},"recvfrom":{"1":"TRACKED"}, "recvmsg":{"1":"TRACKED"},"getc":{},"fread":{"0":"TRACKED"},"read":{"1":"TRACKED"},"sprintf":{"0":"TRACKED","1":"%s","-2":"DYNAMIC_VALUE"},"getenv":{"return":"TRACKED"}},
+                            "affected_by":{"streamBuffGet":{"1":"TRACKED"},"gets":{},"scanf":{"0":"%s","-1":"DYNAMIC_VALUE"},"fscanf":{"1":"%s","-2":"DYNAMIC_VALUE"},"fgets":{"0":"TRACKED"},"recv":{"1":"TRACKED"},"SSL_read":{"1":"TRACKED"},"recvfrom":{"1":"TRACKED"}, "recvmsg":{"1":"TRACKED"},"getc":{},"fread":{"0":"TRACKED"},"read":{"1":"TRACKED"},"sprintf":{"0":"TRACKED","1":"%s","-2":"DYNAMIC_VALUE"},"getenv":{"return":"TRACKED"}},
                             "if_dependant": false
                         }
                     }
@@ -2472,7 +2472,7 @@
                 "Medium":[
                     {
                         "0":{
-                            "affected_by":{"gets":{},"scanf":{"0":"%s","-1":"DYNAMIC_VALUE"},"fscanf":{"1":"%s","-2":"DYNAMIC_VALUE"},"fgets":{"0":"TRACKED"},"recv":{"1":"TRACKED"},"SSL_read":{"1":"TRACKED"},"recvfrom":{"1":"TRACKED"}, "recvmsg":{"1":"TRACKED"},"getc":{},"fread":{"0":"TRACKED"},"read":{"1":"TRACKED"},"sprintf":{"0":"TRACKED","1":"%s","-2":"DYNAMIC_VALUE"},"memcpy":{"0":"TRACKED"},"strcpy":{"0":"TRACKED"},"strncpy":{"0":"TRACKED"},"getenv":{"return":"TRACKED"}},
+                            "affected_by":{"streamBuffGet":{"1":"TRACKED"},"gets":{},"scanf":{"0":"%s","-1":"DYNAMIC_VALUE"},"fscanf":{"1":"%s","-2":"DYNAMIC_VALUE"},"fgets":{"0":"TRACKED"},"recv":{"1":"TRACKED"},"SSL_read":{"1":"TRACKED"},"recvfrom":{"1":"TRACKED"}, "recvmsg":{"1":"TRACKED"},"getc":{},"fread":{"0":"TRACKED"},"read":{"1":"TRACKED"},"sprintf":{"0":"TRACKED","1":"%s","-2":"DYNAMIC_VALUE"},"memcpy":{"0":"TRACKED"},"strcpy":{"0":"TRACKED"},"strncpy":{"0":"TRACKED"},"getenv":{"return":"TRACKED"}},
                             "if_dependant": true
                         }
                     },
